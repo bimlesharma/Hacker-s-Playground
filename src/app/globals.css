@@ -2,20 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'squid game';
+  src: url('./fonts/Game-Of-Squids.ttf') format('truetype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base{
+  .font-squid-game {
+    font-family: 'squid game', sans-serif;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .triangle{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);;
+  }
+}
+
+@layer base{
+/* Custom Cursor Style */
+*{
+  cursor: none;
+}
+
+/* Custom Cursor Style */
+.custom-cursor {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  background-color: #ff0077; /* Neon pink for Squid Game theme */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Triangle shape */
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #ff0077, 0 0 30px #ff0077;
+  transition: transform 0.1s ease, clip-path 0.3s ease;
+}
+
+/* Square Cursor on Hover */
+.custom-square-hover:hover ~ .custom-cursor {
+  clip-path: none; /* Switch to square */
+  border-radius: 0; /* Remove rounded corners */
+  transform: scale(1.2); /* Enlarge slightly */
+}
+
+
 }
