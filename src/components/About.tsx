@@ -1,9 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+// import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-gradient-to-b from-gray-900 to-black py-16 px-6 lg:px-24">
+    <section className="relative bg-gradient-to-b from-gray-900 to-black pt-24 pb-16 px-6 lg:px-24">
       {/* Background Shapes */}
       <div className="absolute inset-0 z-0">
         <motion.div
@@ -28,12 +29,12 @@ const AboutSection = () => {
         {/* Left Section */}
         <div className="text-center lg:text-left">
           <motion.h2
-            className="text-4xl lg:text-5xl font-bold text-white mb-6"
+            className="text-3xl lg:text-4xl font-bold text-white mb-6 font-squid-game uppercase"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            About <span className="text-pink-500">Hacker's Playground</span>
+            About <span className="text-pink-500">Hackers&apos; Playground</span>
           </motion.h2>
           <motion.p
             className="text-gray-300 text-lg leading-8 mb-6"
@@ -46,11 +47,21 @@ const AboutSection = () => {
             hackathon challenges you to think, create, and innovate. Face
             exciting challenges, unlock your potential, and compete for glory.
           </motion.p>
+
+          <motion.p
+          className="text-gray-300 text-lg leading-8 mb-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          >
+          It is a 30-hour offline overnight hackathon, designed to push the boundaries of innovation, creativity, and collaboration. Hosted by <span className="text-pink-500 font-bold">TechNexus Community</span> in collaboration with GDG on Campus MIET, this event goes beyond just being a competition—it’s packed with exciting activities, engaging games, and real-world problem-solving to keep the energy high and the ideas flowing!
+          </motion.p>
           <ul className="space-y-4">
             {[
               "Exciting themes inspired by real-world problems.",
-              "24-hour intense coding battles.",
-              "Prizes and rewards worth thousands!",
+              "30-hour intense coding battles.",
+              "Prizes and rewards worth lakhs!",
+              "Fun with lots of engaging mini-games & activities.",
             ].map((point, index) => (
               <motion.li
                 key={index}
@@ -67,20 +78,22 @@ const AboutSection = () => {
 
         {/* Right Section */}
         <motion.div
-          className="relative w-full max-w-md h-auto"
+          className="relative w-full max-w-md h-auto "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
           <img
-            src="/images/logo.png"
+            src="/images/about-img.png"
             alt="Squid Game Doll"
-            className="rounded-lg shadow-lg"
+            draggable="false"
+            className="rounded-lg shadow-lg w-auto"
           />
+          {/* <Image src={`/images/about-img.png`} width={400} height={300} alt="about"/> */}
           <motion.div
-            className="absolute p-4 inset-0 border-4 border-pink-500 rounded-lg pointer-events-none"
+            className="absolute p-4 inset-0 border-2 border-pink-500 rounded-lg pointer-events-none"
             initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1.2  }}
+          animate={{ opacity: 1, scale: 1.07  }}
           />
         </motion.div>
       </div>
