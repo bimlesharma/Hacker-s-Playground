@@ -46,5 +46,9 @@
   transform: scale(1.2); /* Enlarge slightly */
 }
 
+}
 
+
+html {
+  scroll-behavior: smooth;
 }
