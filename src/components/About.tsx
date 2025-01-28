@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-gradient-to-b from-gray-900 to-black py-16 px-6 lg:px-24">
+    <section className="relative bg-gradient-to-b from-gray-900 to-black pt-24 pb-16 px-6 lg:px-24">
       {/* Background Shapes */}
       <div className="absolute inset-0 z-0">
         <motion.div
@@ -91,7 +91,7 @@ const AboutSection = () => {
           />
           {/* <Image src={`/images/about-img.png`} width={400} height={300} alt="about"/> */}
           <motion.div
-            className="absolute p-4 inset-0 border-2 border-pink-800 rounded-lg pointer-events-none"
+            className="absolute p-4 inset-0 border-2 border-pink-500 rounded-lg pointer-events-none"
             initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1.07  }}
           />

@@ -148,7 +148,7 @@ const FooterSection = () => {
           © {new Date().getFullYear()} TechNexus Community. All rights reserved.
         </p>
         <motion.div
-          className="absolute inset-x-0 mx-auto top-0 h-1 w-auto bg-pink-500 rounded-full"
+          className="absolute inset-x-0 mx-auto top-0 h-[1px] w-auto bg-pink-500 rounded-full"
           animate={{ scaleX: [.8, 1, .8] }}
           transition={{ duration: 2, repeat: Infinity }}
         />
