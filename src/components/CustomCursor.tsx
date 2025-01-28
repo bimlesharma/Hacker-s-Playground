@@ -8,7 +8,7 @@ const CustomCursor = () => {
     cursor.classList.add("custom-cursor");
     document.body.appendChild(cursor);
 
-    const moveCursor = (e: { clientX: any; clientY: any; }) => {
+    const moveCursor = (e: MouseEvent) => {
       cursor.style.left = `${e.clientX}px`;
       cursor.style.top = `${e.clientY}px`;
     };

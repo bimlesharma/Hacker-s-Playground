@@ -1,78 +1,78 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FloatingDock } from './ui/floating-doct';
+// import { FloatingDock } from './ui/floating-doct';
 import Image from 'next/image';
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
+// import {
+//   IconBrandGithub,
+//   IconBrandX,
+//   IconExchange,
+//   IconHome,
+//   IconNewSection,
+//   IconTerminal2,
+// } from "@tabler/icons-react";
 import { Spotlight } from './ui/spotlight-new';
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState("00:00:00:00");
-  const links = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+  // const links = [
+  //   {
+  //     title: "Home",
+  //     icon: (
+  //       <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     ),
+  //     href: "#",
+  //   },
  
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <Image
-          src=""
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+  //   {
+  //     title: "Products",
+  //     icon: (
+  //       <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     ),
+  //     href: "#",
+  //   },
+  //   {
+  //     title: "Components",
+  //     icon: (
+  //       <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     ),
+  //     href: "#",
+  //   },
+  //   {
+  //     title: "Aceternity UI",
+  //     icon: (
+  //       <Image
+  //         src=""
+  //         width={20}
+  //         height={20}
+  //         alt="Aceternity Logo"
+  //       />
+  //     ),
+  //     href: "#",
+  //   },
+  //   {
+  //     title: "Changelog",
+  //     icon: (
+  //       <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     ),
+  //     href: "#",
+  //   },
  
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-  ];
+  //   {
+  //     title: "Twitter",
+  //     icon: (
+  //       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     ),
+  //     href: "#",
+  //   },
+  //   {
+  //     title: "GitHub",
+  //     icon: (
+  //       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //     ),
+  //     href: "#",
+  //   },
+  // ];
 
   useEffect(() => {
     const targetDate = new Date("2025-02-20T00:00:00").getTime();

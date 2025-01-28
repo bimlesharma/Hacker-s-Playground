@@ -33,7 +33,7 @@ const FooterSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Hacker's Playground
+            Hacker&apos;s Playground
           </motion.h3>
           <p className="text-gray-400 text-sm max-w-md">
             Dare to play, innovate, and win. Join us for a one-of-a-kind
@@ -69,7 +69,7 @@ const FooterSection = () => {
       {/* Bottom Bar */}
       <div className="relative mt-12 flex justify-center border-t border-gray-700 pt-6 text-center">
         <p className="text-gray-500 text-sm">
-          © {new Date().getFullYear()} Hacker's Playground. All rights reserved.
+          © {new Date().getFullYear()} Hacker&apos;s Playground. All rights reserved.
         </p>
         <motion.div
           className="absolute top-0 bg-pink-500 h-1 w-[50vw] rounded-full"

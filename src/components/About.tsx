@@ -33,7 +33,7 @@ const AboutSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            About <span className="text-pink-500">Hacker's Playground</span>
+            About <span className="text-pink-500">Hacker&apos;s Playground</span>
           </motion.h2>
           <motion.p
             className="text-gray-300 text-lg leading-8 mb-6"

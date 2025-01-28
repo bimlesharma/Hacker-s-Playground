@@ -1,5 +1,5 @@
 import AboutSection from "@/components/About";
-import SquidGameDivider from "@/components/Divider";
+// import SquidGameDivider from "@/components/Divider";
 import Hero from "@/components/Hero";
 
 
