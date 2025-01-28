@@ -1,66 +1,99 @@
 // "use client";
+
 // import { useState } from "react";
 // import { motion } from "framer-motion";
-// import { div } from "motion/react-client";
+// import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 // const NavBar = () => {
 //   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 //   const toggleMobileMenu = () => {
-//     setIsMobileMenuOpen(!isMobileMenuOpen);
+//     setIsMobileMenuOpen((prev) => !prev);
 //   };
 
 //   return (
-//     <div className="flex justify-center bg-blue-300 w-full">
+//     <div className="flex justify-center w-full">
 //       <motion.nav
-//         className="fixed md:left-[16vw] rounded-md md:top-2 md:transform md:-translate-x-1/2 z-50 md:flex items-center bg-pink-800 shadow-2xl px-8 py-4 border border-pink-500"
+//         className="fixed top-3 left-3 right-3 md:left-[5vw] md:right-[5vw] lg:left-[10vw] lg:right-[10vw] rounded-md md:top-2 md:transform md:-translate-x-1/2 z-50 bg-black/30 backdrop-blur shadow-2xl px-6 py-3 border border-pink-500"
 //         initial={{ opacity: 0, y: -50 }}
 //         animate={{ opacity: 1, y: 0 }}
 //         transition={{ duration: 0.7, ease: "easeOut" }}
 //       >
-//         {/* desktop menu */}
-//         <div className="hidden container space-x-24 mx-auto md:flex items-center justify-between gap-24">
-//           <div className="flex items-center justify-between ">
-//             <motion.img src="/images/logo.png" alt="logo" className="h-8" />
+//         {/* Desktop menu */}
+//         <div className="hidden md:flex container items-center justify-between mx-auto">
+//           <div className="flex items-center">
+//             <motion.img
+//               src="/images/logo.png"
+//               alt="logo"
+//               className="h-8"
+//               draggable="false"
+//               whileHover={{ scale: 1.1 }}
+//               transition={{ duration: 0.3 }}
+//             />
 //           </div>
 
-//           <div className="hidden md:flex items-center justify-center">
-//             {["Home", "About", "Services", "Contact"].map((item, index) => (
+//           <div className="flex items-center space-x-6 font-mono uppercase text-sm">
+//             {[
+//               "About",
+//               "Themes",
+//               "Schedule",
+//               "Prizes",
+//               "Swags",
+//               "Sponsors",
+//               "Team",
+//             ].map((item, index) => (
 //               <motion.div
 //                 key={index}
 //                 whileHover={{ scale: 1.1 }}
 //                 transition={{ duration: 0.3 }}
-//                 className="ml-4 text-white font-semibold cursor-pointer"
+//                 className="text-white cursor-pointer font-semibold"
 //               >
 //                 {item}
 //               </motion.div>
 //             ))}
 //           </div>
-//           <div className="hidden md:flex">
-//             <motion.button
-//               whileHover={{ scale: 1.1 }}
-//               transition={{ duration: 0.3 }}
-//               className="ml-4 text-white font-semibold cursor-pointer"
-//             >
-//               Register Now
-//             </motion.button>
-//           </div>
+
+//           {/* <motion.button
+//             whileHover={{ scale: 1.1 }}
+//             transition={{ duration: 0.3 }}
+//             className="bg-white text-pink-800 font-semibold py-2 px-4 rounded shadow hover:shadow-md disabled:cursor-not-allowed"
+//             disabled
+//           >
+//             Register Now
+//           </motion.button> */}
+//           <HoverBorderGradient
+//             containerClassName="rounded-[7px]"
+//             as="button"
+//             className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md"
+//           >
+//             {/* <AceternityLogo /> */}
+//             <span className="text-sm font-bold">Register Now</span>
+//           </HoverBorderGradient>
 //         </div>
 
-//         {/* mobile menu */}
-//         <div className="md:hidden flex items-center justify-between w-screen">
-//           <motion.img src="/images/logo.png" alt="logo" className="h-8" />
+//         {/* Mobile menu */}
+//         <div className="md:hidden flex items-center justify-between w-full">
+//           <motion.img
+//             src="/images/logo.png"
+//             alt="logo"
+//             className="h-8"
+//             draggable="false"
+//             whileHover={{ scale: 1.1 }}
+//             transition={{ duration: 0.3 }}
+//           />
 //           <motion.div
 //             whileHover={{ scale: 1.1 }}
 //             transition={{ duration: 0.3 }}
-//             className="ml-4 text-white font-semibold cursor-pointer"
+//             className="text-white font-semibold cursor-pointer"
 //             onClick={toggleMobileMenu}
+//             aria-label="Toggle Mobile Menu"
 //           >
 //             ☰
 //           </motion.div>
 //         </div>
+
 //         {isMobileMenuOpen && (
-//           <div className="md:hidden flex flex-col items-center mt-4 space-y-4 w-full">
+//           <div className="md:hidden flex flex-col items-center mt-4 space-y-4">
 //             {["Home", "About", "Services", "Contact"].map((item, index) => (
 //               <motion.div
 //                 key={index}
@@ -74,7 +107,7 @@
 //             <motion.button
 //               whileHover={{ scale: 1.1 }}
 //               transition={{ duration: 0.3 }}
-//               className="text-white font-semibold custom-square-hover"
+//               className="bg-white text-pink-800 font-semibold py-2 px-4 rounded shadow hover:shadow-md"
 //             >
 //               Register Now
 //             </motion.button>
@@ -89,10 +122,137 @@
 
 
 
+// "use client";
+
+// import { useState } from "react";
+// import { motion } from "framer-motion";
+// import { HoverBorderGradient } from "./ui/hover-border-gradient";
+
+// const NavBar = () => {
+//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+//   const toggleMobileMenu = () => {
+//     setIsMobileMenuOpen((prev) => !prev);
+//   };
+
+//   return (
+//     <div className="flex justify-center w-full">
+//       <motion.nav
+//         className="fixed top-3 left-3 right-3 md:left-[5vw] md:right-[5vw] lg:left-[10vw] lg:right-[10vw] rounded-md md:top-2 md:transform md:-translate-x-1/2 z-50 bg-black/30 backdrop-blur shadow-2xl px-6 py-3 border border-pink-500"
+//         initial={{ opacity: 0, y: -50 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.7, ease: "easeOut" }}
+//       >
+//         {/* Desktop menu */}
+//         <div className="hidden md:flex container items-center justify-between mx-auto">
+//           <a href="/" className="flex items-center">
+//             <motion.img
+//               src="/images/logo.png"
+//               alt="logo"
+//               className="h-8"
+//               draggable="false"
+//               whileHover={{ scale: 1.1 }}
+//               transition={{ duration: 0.3 }}
+//             />
+//           </a>
+
+//           <div className="flex items-center space-x-6 font-mono uppercase text-sm">
+//             {[
+//               "About",
+//               "Themes",
+//               "Schedule",
+//               "Prizes",
+//               "Swags",
+//               "Sponsors",
+//               "Team",
+//             ].map((item, index) => (
+//               <motion.div
+//                 key={index}
+//                 whileHover={{ scale: 1.1 }}
+//                 transition={{ duration: 0.3 }}
+//                 className="text-white cursor-pointer font-semibold"
+//               >
+//                 <a href={`#${item.toLowerCase()}`}>{item}</a> {/* Add smooth scroll */}
+//               </motion.div>
+//             ))}
+//           </div>
+
+//           <HoverBorderGradient
+//             containerClassName="rounded-[7px]"
+//             as="button"
+//             className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md"
+//           >
+//             <span className="text-sm font-bold">Register Now</span>
+//           </HoverBorderGradient>
+//         </div>
+
+//         {/* Mobile menu */}
+//         <div className="md:hidden flex items-center justify-between w-full">
+//           <motion.img
+//             src="/images/logo.png"
+//             alt="logo"
+//             className="h-8"
+//             draggable="false"
+//             whileHover={{ scale: 1.1 }}
+//             transition={{ duration: 0.3 }}
+//           />
+//           <motion.div
+//             whileHover={{ scale: 1.1 }}
+//             transition={{ duration: 0.3 }}
+//             className="text-white font-semibold cursor-pointer"
+//             onClick={toggleMobileMenu}
+//             aria-label="Toggle Mobile Menu"
+//           >
+//             ☰
+//           </motion.div>
+//         </div>
+
+//         {/* Mobile menu links */}
+//         {isMobileMenuOpen && (
+//           <div className="md:hidden flex flex-col items-center mt-4 space-y-4">
+//             {["About", "Themes", "Schedule", "Prizes", "Swags", "Sponsors", "Team"].map(
+//               (item, index) => (
+//                 <motion.div
+//                   key={index}
+//                   whileHover={{ scale: 1.1 }}
+//                   transition={{ duration: 0.3 }}
+//                   className="text-white font-semibold cursor-pointer"
+//                 >
+//                   <a
+//                     href={`#${item.toLowerCase()}`} // Add smooth scroll
+//                     className="text-white"
+//                   >
+//                     {item}
+//                   </a>
+//                 </motion.div>
+//               )
+//             )}
+//             <motion.button
+//               whileHover={{ scale: 1.1 }}
+//               transition={{ duration: 0.3 }}
+//               className="bg-white text-pink-800 font-semibold py-2 px-4 rounded shadow hover:shadow-md"
+//             >
+//               Register Now
+//             </motion.button>
+//           </div>
+//         )}
+//       </motion.nav>
+//     </div>
+//   );
+// };
+
+// export default NavBar;
+
+
+
+
+
+
 "use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -101,47 +261,67 @@ const NavBar = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <div className="flex justify-center bg-blue-300 w-full">
+    <div className="flex justify-center w-full">
       <motion.nav
-        className="fixed top-3 left-3 right-3 md:left-[10vw] md:right-[10vw] lg:left-[20vw] lg:right-[20vw] rounded-md md:top-2 md:transform md:-translate-x-1/2 z-50 bg-pink-800 shadow-2xl px-6 py-4 border border-pink-500"
+        className="fixed top-3 left-3 right-3 md:left-[5vw] md:right-[5vw] lg:left-[10vw] lg:right-[10vw] rounded-md md:top-2 md:transform md:-translate-x-1/2 z-50 bg-black/30 backdrop-blur shadow-2xl px-6 py-3 border border-pink-500"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         {/* Desktop menu */}
         <div className="hidden md:flex container items-center justify-between mx-auto">
-          <div className="flex items-center">
+          <a href="/" className="flex items-center">
             <motion.img
               src="/images/logo.png"
               alt="logo"
               className="h-8"
+              draggable="false"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             />
-          </div>
+          </a>
 
-          <div className="flex items-center space-x-8">
-            {["Home", "About", "Services", "Contact"].map((item, index) => (
+          <div className="flex items-center space-x-6 font-mono uppercase text-sm">
+            {[
+              "About",
+              "Themes",
+              "Schedule",
+              "Prizes",
+              "Swags",
+              "Sponsors",
+              "Team",
+            ].map((item, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
-                className="text-white font-semibold cursor-pointer"
+                className="text-white cursor-pointer font-semibold relative"
               >
-                {item}
+                <a href={`#${item.toLowerCase()}`} className="relative">
+                  {item}
+                </a>
+                <motion.div
+                  className="absolute bottom-0 left-0 h-[2px] bg-pink-500 w-0"
+                  initial={{ width: "0" }}
+                  whileHover={{ width: "100%" }}
+                  transition={{ duration: 0.3 }}
+                />
               </motion.div>
             ))}
           </div>
 
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
-            className="bg-white text-pink-800 font-semibold py-2 px-4 rounded shadow hover:shadow-md disabled:cursor-not-allowed"
-            disabled
+          <HoverBorderGradient
+            containerClassName="rounded-[7px]"
+            as="button"
+            className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md"
           >
-            Register Now
-          </motion.button>
+            <span className="text-sm font-bold">Register Now</span>
+          </HoverBorderGradient>
         </div>
 
         {/* Mobile menu */}
@@ -150,6 +330,7 @@ const NavBar = () => {
             src="/images/logo.png"
             alt="logo"
             className="h-8"
+            draggable="false"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           />
@@ -164,18 +345,39 @@ const NavBar = () => {
           </motion.div>
         </div>
 
+        {/* Mobile menu links */}
         {isMobileMenuOpen && (
-          <div className="md:hidden flex flex-col items-center mt-4 space-y-4">
-            {["Home", "About", "Services", "Contact"].map((item, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-                className="text-white font-semibold cursor-pointer"
-              >
-                {item}
-              </motion.div>
-            ))}
+          <motion.div
+            className="md:hidden flex flex-col items-center mt-4 space-y-4"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.3 }}
+          >
+            {["About", "Themes", "Schedule", "Prizes", "Swags", "Sponsors", "Team"].map(
+              (item, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-white font-semibold cursor-pointer relative"
+                  onClick={closeMobileMenu} // Close mobile menu on click
+                >
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="relative"
+                  >
+                    {item}
+                  </a>
+                  <motion.div
+                    className="absolute bottom-0 left-0 h-[2px] bg-pink-500 w-0"
+                    initial={{ width: "0" }}
+                    whileHover={{ width: "100%" }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.div>
+              )
+            )}
             <motion.button
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
@@ -183,7 +385,7 @@ const NavBar = () => {
             >
               Register Now
             </motion.button>
-          </div>
+          </motion.div>
         )}
       </motion.nav>
     </div>

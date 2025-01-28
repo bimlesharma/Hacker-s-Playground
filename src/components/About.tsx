@@ -29,7 +29,7 @@ const AboutSection = () => {
         {/* Left Section */}
         <div className="text-center lg:text-left">
           <motion.h2
-            className="text-4xl lg:text-5xl font-bold text-white mb-6"
+            className="text-3xl lg:text-4xl font-bold text-white mb-6 font-squid-game uppercase"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -86,6 +86,7 @@ const AboutSection = () => {
           <img
             src="/images/about-img.png"
             alt="Squid Game Doll"
+            draggable="false"
             className="rounded-lg shadow-lg w-auto"
           />
           {/* <Image src={`/images/about-img.png`} width={400} height={300} alt="about"/> */}

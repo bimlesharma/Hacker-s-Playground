@@ -108,7 +108,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full min-h-screen overflow-hidden flex items-center justify-center p-8"
+      className="relative w-full min-h-screen overflow-hidden flex items-center justify-center p-8 bg-gray-900"
       style={{
         backgroundImage: "url('/images/web-bg.png')",
         backgroundSize: "cover",
@@ -144,14 +144,15 @@ const Hero = () => {
       <div className="relative mt-16 z-10 text-center flex flex-col justify-center text-white max-w-4xl">
         {/* Top logos */}
         <div className="flex justify-center items-center gap-4 mb-10 md:mb-2 ml-5 scale-110 md:scale-95">
-          <Image
+          <img
             src="/images/technexus-logo.png"
             width={80}
             height={80}
+            draggable="false"
             alt="logo"
           />
           <div className="antialiased font-squid-game text-3xl">X</div>
-          <Image src="/images/gdg-logo.png" width={110} height={80} alt="logo" />
+          <img src="/images/gdg-logo.png" width={110} height={80} alt="logo" draggable="false" />
         </div>
 
         {/* Title */}
@@ -159,8 +160,8 @@ const Hero = () => {
           HACKER&apos;S <span className="text-gray-300">PLAYGROUND</span>
         </h1> */}
         {/* <img src="/images/logo.png" alt="logo" /> */}
-        <Image src="/images/logo.png" width={640} height={64} alt="logo" className="hidden md:block self-center"/>
-        <img src="/images/about-img.png" alt="logo" width={500} className="md:hidden" />
+        <Image src="/images/logo.png" width={640} height={64} alt="logo" className="hidden md:block self-center" draggable="false"/>
+        <img src="/images/about-img.png" alt="logo" className="md:hidden w-auto px-10" draggable="false" />
 
         {/* Subtitle */}
         <p className="mt-4 text-lg md:text-4xl pb-4">
@@ -205,7 +206,7 @@ const Hero = () => {
             △
           </motion.div>
           <motion.div
-            className="text-7xl -mt-5"
+            className="text-5xl md:text-7xl md:-mt-5"
             whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.3 }}
           >
