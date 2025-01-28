@@ -34,7 +34,7 @@ const AboutSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            About <span className="text-pink-500">Hacker&apos;s Playground</span>
+            About <span className="text-pink-500">Hackers&apos; Playground</span>
           </motion.h2>
           <motion.p
             className="text-gray-300 text-lg leading-8 mb-6"
@@ -47,11 +47,21 @@ const AboutSection = () => {
             hackathon challenges you to think, create, and innovate. Face
             exciting challenges, unlock your potential, and compete for glory.
           </motion.p>
+
+          <motion.p
+          className="text-gray-300 text-lg leading-8 mb-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          >
+          It is a 30-hour offline overnight hackathon, designed to push the boundaries of innovation, creativity, and collaboration. Hosted by <span className="text-pink-500 font-bold">TechNexus Community</span> in collaboration with GDG on Campus MIET, this event goes beyond just being a competition—it’s packed with exciting activities, engaging games, and real-world problem-solving to keep the energy high and the ideas flowing!
+          </motion.p>
           <ul className="space-y-4">
             {[
-              // "Exciting themes inspired by real-world problems.",
+              "Exciting themes inspired by real-world problems.",
               "30-hour intense coding battles.",
-              // "Prizes and rewards worth thousands!",
+              "Prizes and rewards worth lakhs!",
+              "Fun with lots of engaging mini-games & activities.",
             ].map((point, index) => (
               <motion.li
                 key={index}

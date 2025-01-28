@@ -27,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/technexus-logo.png" />
+      </head>
       <body
        
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

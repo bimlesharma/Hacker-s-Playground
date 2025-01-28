@@ -137,7 +137,8 @@ const NavBar = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
-            className="bg-white text-pink-800 font-semibold py-2 px-4 rounded shadow hover:shadow-md"
+            className="bg-white text-pink-800 font-semibold py-2 px-4 rounded shadow hover:shadow-md disabled:cursor-not-allowed"
+            disabled
           >
             Register Now
           </motion.button>

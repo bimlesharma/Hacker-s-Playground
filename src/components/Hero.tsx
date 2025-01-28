@@ -159,8 +159,17 @@ const Hero = () => {
           HACKER&apos;S <span className="text-gray-300">PLAYGROUND</span>
         </h1> */}
         {/* <img src="/images/logo.png" alt="logo" /> */}
-        <Image src="/images/logo.png" width={640} height={64} alt="logo" className="hidden md:block"/>
+        <Image src="/images/logo.png" width={640} height={64} alt="logo" className="hidden md:block self-center"/>
         <img src="/images/about-img.png" alt="logo" width={500} className="md:hidden" />
+
+        {/* Subtitle */}
+        <p className="mt-4 text-lg md:text-4xl pb-4">
+        The Ultimate <span className="text-pink-500 font-semibold"><i>30-Hour Offline</i></span> Showdown
+        </p>
+
+        <h1 className="text-2xl font-squid-game md:text-4xl font-extrabold tracking-wide text-pink-500">
+          8<span className="text-gray-100">-</span>9th<span className="text-gray-100"> March 2025</span>
+        </h1>
 
         {/* Timer */}
         <div className="mt-6 flex justify-center gap-4 text-xl font-mono bg-gray-950/40 w-fit self-center p-2 rounded-lg">
@@ -207,9 +216,10 @@ const Hero = () => {
         {/* Register button */}
         <div className="mt-4">
           <motion.button
-            className="px-8 py-3 bg-pink-700 text-lg font-bold rounded-lg shadow-xl hover:bg-pink-800 focus:outline-none focus:ring-4 focus:ring-pink-300"
+            className="px-8 py-3 bg-pink-600 text-lg font-bold rounded-lg shadow-xl hover:bg-pink-700 focus:outline-none focus:ring-4 focus:ring-pink-300 disabled:cursor-not-allowed"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
+            disabled
           >
             Register Now
           </motion.button>
