@@ -34,23 +34,43 @@ export default function Faq() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-14 md:pl-14">
         {/* Background Shapes */}
-      <div className="absolute inset-0 z-0">
-        <motion.div
-          className="absolute top-10 left-20 h-20 w-20 bg-pink-500 rounded-full blur-lg opacity-40"
-          animate={{ scale: [1, 1.5, 1], opacity: [0.3, 0.5, 0.3] }}
-          transition={{ duration: 6, repeat: Infinity }}
-        />
-        <motion.div
-          className="absolute bottom-20 right-24 h-20 w-20 bg-pink-500 triangle blur-lg opacity-40"
-          animate={{ scale: [1, 1.5, 1], opacity: [0.3, 0.5, 0.3] }}
-          transition={{ duration: 6, repeat: Infinity }}
-        />
-        <motion.div
-          className="absolute top-32 right-1/3 h-24 w-24 bg-pink-500 square blur-lg opacity-30"
-          animate={{ rotate: [0, 360], opacity: [0.3, 0.5, 0.3] }}
-          transition={{ duration: 8, repeat: Infinity }}
-        />
-      </div>
+        <div className="relative inset-0 z-0">
+  
+  {/*  */}
+  <motion.div
+    className="absolute top-32 right-1/3 h-24 w-24 bg-pink-500 square blur-lg opacity-30"
+    animate={{ rotate: [0, 360], opacity: [0.3, 0.5, 0.3] }}
+    transition={{ duration: 8, repeat: Infinity }}
+  />
+  
+  {/* New Animated Elements */}
+  <motion.div
+    className="absolute bottom-10 left-1/4 h-16 w-16 bg-pink-500 rounded-lg blur-lg opacity-50"
+    animate={{ x: [0, 100, 0], opacity: [0.3, 0.7, 0.3] }}
+    transition={{ duration: 5, repeat: Infinity }}
+  />
+  
+  {/*  */}
+  
+  <motion.div
+    className="absolute top-48 left-1/4 h-24 w-24 bg-pink-500 rounded-full blur-lg opacity-30"
+    animate={{ scale: [1, 0.8, 1.2, 1], opacity: [0.3, 0.5, 0.3, 0.4] }}
+    transition={{ duration: 7, repeat: Infinity }}
+  />
+  
+  <motion.div
+    className="absolute top-20 right-12 h-18 w-18 bg-pink-500 rounded-md blur-lg opacity-40"
+    animate={{ rotate: [0, 180, 0], opacity: [0.3, 0.6, 0.3] }}
+    transition={{ duration: 6, repeat: Infinity }}
+  />
+  
+  <motion.div
+    className="absolute bottom-10 right-10 h-16 w-16 bg-pink-500 diamond blur-lg opacity-50"
+    animate={{ y: [0, 40, 0], opacity: [0.3, 0.6, 0.3] }}
+    transition={{ duration: 6, repeat: Infinity }}
+  />
+</div>
+
       <h2 className="md:text-6xl text-4xl font-squid-game uppercase font-bebas text-pink-500 font-bold mb-[3rem] md:mb-[5rem] text-center">
         FAQS
       </h2>
