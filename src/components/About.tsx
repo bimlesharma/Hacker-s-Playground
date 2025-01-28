@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+// import Image from "next/image";
 
 const AboutSection = () => {
   return (
@@ -48,9 +49,9 @@ const AboutSection = () => {
           </motion.p>
           <ul className="space-y-4">
             {[
-              "Exciting themes inspired by real-world problems.",
-              "24-hour intense coding battles.",
-              "Prizes and rewards worth thousands!",
+              // "Exciting themes inspired by real-world problems.",
+              "30-hour intense coding battles.",
+              // "Prizes and rewards worth thousands!",
             ].map((point, index) => (
               <motion.li
                 key={index}
@@ -67,20 +68,21 @@ const AboutSection = () => {
 
         {/* Right Section */}
         <motion.div
-          className="relative w-full max-w-md h-auto"
+          className="relative w-full max-w-md h-auto "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
           <img
-            src="/images/logo.png"
+            src="/images/about-img.png"
             alt="Squid Game Doll"
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg w-auto"
           />
+          {/* <Image src={`/images/about-img.png`} width={400} height={300} alt="about"/> */}
           <motion.div
-            className="absolute p-4 inset-0 border-4 border-pink-500 rounded-lg pointer-events-none"
+            className="absolute p-4 inset-0 border-2 border-pink-800 rounded-lg pointer-events-none"
             initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1.2  }}
+          animate={{ opacity: 1, scale: 1.07  }}
           />
         </motion.div>
       </div>
