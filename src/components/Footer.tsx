@@ -1,8 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdLocationPin } from "react-icons/md";
+import Link from "next/link";
 
 const FooterSection = () => {
   return (
@@ -36,7 +37,7 @@ const FooterSection = () => {
           HACKER&apos;S <span className="text-gray-300">PLAYGROUND</span>
         </h1>
           <p className="text-sm text-gray-400">
-          Hackers' Playground – The Ultimate 30-Hour Offline Showdown, organized by TechNexus Community in collaboration with GDG on Campus MIET, is where creativity meets technology.
+          Hackers&apos; Playground – The Ultimate 30-Hour Offline Showdown, organized by TechNexus Community in collaboration with GDG on Campus MIET, is where creativity meets technology.
           </p>
         </div>
 
@@ -86,24 +87,24 @@ const FooterSection = () => {
               </a>
             </li>
             <li>
-              <a
+              <Link
                 href="/" // Replace with the actual link
                 // target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-gray-300 hover:text-pink-500 "
               >
                 Hackathon Guidelines
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/" // Replace with the actual link
                 // target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-gray-300 hover:text-pink-500 "
               >
                 FAQs
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
