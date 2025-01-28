@@ -144,7 +144,8 @@ const NavBar = () => {
             <HoverBorderGradient
               containerClassName="rounded-[7px]"
               as="button"
-              className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md"
+              className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md disabled:cursor-not-allowed"
+              
             >
               <span className="text-sm font-bold">Register Now</span>
             </HoverBorderGradient>

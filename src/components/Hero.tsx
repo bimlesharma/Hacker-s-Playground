@@ -169,7 +169,7 @@ const Hero = () => {
         </p>
 
         <h1 className="text-2xl font-squid-game md:text-4xl font-extrabold tracking-wide text-pink-500">
-          8<span className="text-gray-100">-</span>9th<span className="text-gray-100"> March 2025</span>
+          8<span className="">-</span>9th<span className="text-gray-100"> March 2025</span>
         </h1>
 
         {/* Timer */}
