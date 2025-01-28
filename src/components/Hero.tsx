@@ -112,7 +112,7 @@ const Hero = () => {
       <div className=" absolute inset-0 bg-gradient-to-b from-pink-800 via-pink-600 to-pink-900 opacity-0"></div>
 
       {/* Static shapes */}
-      <div className="absolute left-10 inset-0">
+      {/* <div className="absolute left-10 inset-0">
         {["circle", "triangle", "square"].map((shape, i) => (
             <div
             key={i}
@@ -130,7 +130,7 @@ const Hero = () => {
             }}
             ></div>
         ))}
-      </div>
+      </div> */}
 
       {/* Hero content */}
       <div className="relative mt-16 z-10 text-center text-white max-w-4xl">
@@ -174,7 +174,7 @@ const Hero = () => {
             △
           </motion.div>
           <motion.div
-            className="text-7xl"
+            className="text-5xl"
             whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.3 }}
           >
