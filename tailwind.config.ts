@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'red-600': '#E50914', // Netflix-like red
+        'gray-800': '#1F1F1F', // Dark gray
+        'gray-300': '#D1D1D1', // Light gray
       },
     },
   },
