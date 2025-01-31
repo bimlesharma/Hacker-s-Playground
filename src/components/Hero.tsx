@@ -120,7 +120,7 @@ const Hero = () => {
       <div className=" absolute inset-0 bg-gradient-to-b from-pink-800 via-pink-600 to-pink-900 opacity-0"></div>
 
       {/* Static shapes */}
-      <div className="absolute hidden md:block left-10 inset-0">
+     {/* { <div className="absolute hidden md:block left-10 inset-0">
         {["circle", "triangle", "square"].map((shape, i) => (
           <div
             key={i}
@@ -138,7 +138,7 @@ const Hero = () => {
             }}
           ></div>
         ))}
-      </div> */}
+      </div> */} 
 
       {/* Hero content */}
       <div className="relative mt-16 z-10 text-center flex flex-col justify-center text-white max-w-4xl">
