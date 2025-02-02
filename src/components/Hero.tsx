@@ -91,7 +91,8 @@ const Hero = () => {
       const hours = Math.floor(
         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      const minutes = Math.floor((difference % (1000 * 60)) / (1000 * 60));
+      // const minutes = Math.floor((difference % (1000 * 60)) / (1000 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
       setTimeLeft(
@@ -191,7 +192,7 @@ const Hero = () => {
 
         {/* Shapes */}
         <div className="mt-4 flex justify-center items-center gap-6 text-pink-500">
-          <motion.div
+          {/* <motion.div
             className="text-5xl"
             whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.3 }}
@@ -211,7 +212,8 @@ const Hero = () => {
             transition={{ duration: 0.3 }}
           >
             □
-          </motion.div>
+          </motion.div> */}
+          <img src="/images/shape.svg" className="w-[45%] md:w-[27%]" alt="shapes" />
         </div>
 
         {/* Register button */}

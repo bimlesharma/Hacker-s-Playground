@@ -38,6 +38,7 @@ const eslintConfig = [
     files: ["**/*.ts", "**/*.tsx"], // Apply this rule to TypeScript files
     rules: {
       "@typescript-eslint/no-unused-vars": "off", // Turn off the unused vars rule
+      "prefer-const": "off"
     },
   },
 ];
