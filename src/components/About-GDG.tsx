@@ -58,7 +58,7 @@ const AboutSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          >At GDG on Campus MIET, we believe in Unity, Growth, and Innovation—where every student is encouraged to learn, share, and build. If you're passionate about technology and eager to make an impact, this is the community for you. Join us and be part of something bigger!
+          >At GDG on Campus MIET, we believe in Unity, Growth, and Innovation—where every student is encouraged to learn, share, and build. If you&apos;re passionate about technology and eager to make an impact, this is the community for you. Join us and be part of something bigger!
           </motion.p>
           {/* <ul className="space-y-4">
             {[

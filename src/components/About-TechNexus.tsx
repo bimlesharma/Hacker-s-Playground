@@ -41,7 +41,7 @@ const AboutSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-          >Tech Nexus is more than just a community—it's a movement that bridges the gap between innovation and execution. We are a dynamic group of tech enthusiasts, developers, designers, and problem-solvers dedicated to fostering a culture of learning, collaboration, and innovation.
+          >Tech Nexus is more than just a community—it&apos;s a movement that bridges the gap between innovation and execution. We are a dynamic group of tech enthusiasts, developers, designers, and problem-solvers dedicated to fostering a culture of learning, collaboration, and innovation.
           </motion.p>
           <motion.p
             className="text-gray-300 text-lg leading-8 mb-6"
