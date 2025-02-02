@@ -7,6 +7,7 @@ import AboutTechNexus from "@/components/About-TechNexus";
 import AboutGDG from "@/components/About-GDG";
 import Theme  from "@/components/Theme";
 import Prizes from "@/components/Prizes";
+import Swag from "@/components/Swag";
 
 
 export default function Home() {
@@ -30,6 +31,9 @@ export default function Home() {
     </div>
     <div id="prizes" className="">
       <Prizes />
+    </div>
+    <div id="swags" className="">
+      <Swag />
     </div>
     <div id="faqs" className="">
       <Faqs />

@@ -13,7 +13,7 @@ const prizes = [
   {
     title: "Winner",
     amount: "₹(to be announced)",
-    icon: <FaTrophy size={80} className="text-yellow-500" />,
+    icon: <FaTrophy size={60} className="text-yellow-500" />,
     border: "border-yellow-500",
     badge: "🥇 Gold",
     badgeColor: "bg-yellow-500 text-black",
