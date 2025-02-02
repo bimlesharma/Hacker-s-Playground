@@ -137,12 +137,12 @@ export default function Faq() {
         FAQS
       </h2>
 
-      <div className="space-y-8">
+      <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="relative">
             <div className="bg-gray-800/60 rounded-lg overflow-hidden shadow-lg">
               <button
-                className="w-full text-left px-4 pl-6 py-3 focus:outline-none flex justify-between items-center"
+                className="w-full text-left px-4 pl-6 py-2 focus:outline-none flex justify-between items-center"
                 onClick={() => toggleFAQ(index)}
               >
                 <span className="font-bold text-white text-lg md:text-2xl pr-8">
@@ -164,7 +164,7 @@ export default function Faq() {
                   : "max-h-0 opacity-0 scale-95"
               }`}
             >
-              <div className="mt-3 bg-gray-800/40 rounded-lg p-7 shadow-lg transform transition-all duration-700 ease-in-out">
+              <div className="mt-3 bg-gray-800/40 rounded-lg p-3 px-7 shadow-lg transform transition-all duration-700 ease-in-out">
                 <p className="text-white text-base md:text-lg font-semibold">
                   {faq.answer}
                 </p>

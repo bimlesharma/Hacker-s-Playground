@@ -42,7 +42,8 @@ const AboutSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            GDG on Campus MIET is more than just a tech club—it’s a community of innovators, learners, and changemakers. Now in its third year, our chapter continues to empower students by fostering growth, collaboration, and real-world impact. We provide a platform where students can learn new skills, engage in hands-on experiences, and connect with industry experts to stay ahead in the ever-evolving tech landscape.
+            GDG on Campus MIET is more than just a tech club—it’s a thriving community of innovators and changemakers. As co-organizers of Hacker’s Playground with TechNexus, we’re bringing you an electrifying hackathon experience where creativity meets cutting-edge technology.
+
           </motion.p>
 
           <motion.p
@@ -51,14 +52,14 @@ const AboutSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
           >
-          From technical workshops and bootcamps to Google-led challenges like the Solution Challenge and Cloud Study Jams, we create opportunities for students to sharpen their skills and build innovative solutions. Our supportive network of peers and mentors encourages collaboration, helping students navigate their tech journey with guidance and motivation.
+          Now in its third year, our chapter continues to empower students through hands-on learning, collaboration, and real-world problem-solving. From expert-led workshops to Google-driven challenges, we provide the perfect platform to sharpen skills, build impactful solutions, and stay ahead in the tech landscape.
           </motion.p>
           <motion.p
           className="text-gray-300 text-lg leading-8 mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          >At GDG on Campus MIET, we believe in Unity, Growth, and Innovation—where every student is encouraged to learn, share, and build. If you&apos;re passionate about technology and eager to make an impact, this is the community for you. Join us and be part of something bigger!
+          >At Hacker’s Playground, expect mentorship, networking, and a dynamic environment to transform ideas into reality. Whether you're here to learn, create, or compete, this is your chance to innovate and be part of something bigger. Join us and let’s build the future together!
           </motion.p>
           {/* <ul className="space-y-4">
             {[
@@ -91,7 +92,7 @@ const AboutSection = () => {
             src="/images/gdg.png"
             alt="Squid Game Doll"
             draggable="false"
-            className="rounded-lg shadow-lg w-auto"
+            className="rounded-lg shadow-lg w-full"
           />
           {/* <Image src={`/images/about-img.png`} width={400} height={300} alt="about"/> */}
           <motion.div

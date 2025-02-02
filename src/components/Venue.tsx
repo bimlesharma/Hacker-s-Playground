@@ -61,7 +61,7 @@ const VenueReveal = () => {
             alt="MIET College"
             width={800}
             height={500}
-            className="rounded-lg shadow-lg object-cover"
+            className="rounded-lg shadow-lg object-cover border-4 border-white/20"
           />
         </motion.div>
       </div>
