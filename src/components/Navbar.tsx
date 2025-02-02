@@ -40,7 +40,7 @@ const NavBar = () => {
           <div className="flex items-center space-x-6 font-mono uppercase text-sm">
             {[
               "About",
-              "Themes",
+              "Tracks",
               "Schedule",
               "Prizes",
               "Swags",
@@ -109,7 +109,7 @@ const NavBar = () => {
           >
             {[
               "About",
-              "Themes",
+              "Tracks",
               "Schedule",
               "Prizes",
               "Swags",
