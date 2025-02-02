@@ -10,13 +10,16 @@ const VenueReveal = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsRevealed(true);
-    }, 2000); // Reveal after 2 seconds
+    }, 1000); // Reveal after 2 seconds
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen bg-black flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full bg-black flex px-5 flex-col items-center justify-center overflow-hidden">
+      <div className="text-4xl md:text-6xl font-bold font-squid-game text-center text-pink-600 mb-8">
+        VENUE
+      </div>
       {/* Floating Squid Game Symbols */}
-      <div className="absolute inset-0 flex justify-center items-center">
+      <div className="absolute top-40 inset-0 flex justify-center items-center">
         <motion.div
           className="absolute w-24 h-24 border-4 border-pink-500 rounded-full opacity-20"
           animate={{ rotate: 360 }}
@@ -30,22 +33,22 @@ const VenueReveal = () => {
       </div>
 
       {/* Hidden Panels Revealing the Venue */}
-      <div className="relative w-full max-w-3xl h-96 bg-gray-900 flex items-center justify-center overflow-hidden">
+      <div className="relative w-auto h-auto rounded-lg bg-gray-900 flex items-center justify-center overflow-hidden">
         {/* Left Sliding Panel */}
         <motion.div
           initial={{ x: 0 }}
           animate={isRevealed ? { x: "-100%" } : {}}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           className="absolute left-0 top-0 h-full w-1/2 bg-pink-600"
-        ></motion.div>
-
+        />
+        
         {/* Right Sliding Panel */}
         <motion.div
           initial={{ x: 0 }}
           animate={isRevealed ? { x: "100%" } : {}}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           className="absolute right-0 top-0 h-full w-1/2 bg-pink-600"
-        ></motion.div>
+        />
 
         {/* Image Reveal */}
         <motion.div
@@ -58,7 +61,7 @@ const VenueReveal = () => {
             alt="MIET College"
             width={800}
             height={500}
-            className="rounded-xl shadow-lg"
+            className="rounded-lg shadow-lg object-cover"
           />
         </motion.div>
       </div>

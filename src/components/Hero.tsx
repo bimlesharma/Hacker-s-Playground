@@ -143,20 +143,20 @@ const Hero = () => {
       </div> */} 
 
       {/* Hero content */}
-      <div className="relative mt-16 z-10 text-center flex flex-col justify-center text-white max-w-4xl">
+      <div className="relative mt-12 z-10 text-center flex flex-col justify-center text-white max-w-4xl">
         {/* Top logos */}
         <div className="flex justify-center z-50 items-center gap-4 mb-1 md:mb-2 scale-100 md:scale-95">
           <img
             src="/images/technexus-logo.png"
             className=""
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             draggable="false"
             alt="logo"
           />
           {/* <img src="/images/gdg-logo.png" width={110} height={80} alt="logo" draggable="false" /> */}
         </div>
-          <div className=" text-lg text-center ">PRESENTS</div>
+          <div className=" text-sm text-center ">PRESENTS</div>
 
         {/* Title */}
         {/* <h1 className="text-6xl font-squid-game md:text-8xl font-extrabold tracking-wide text-pink-500">
@@ -176,7 +176,7 @@ const Hero = () => {
         </h1>
 
         {/* Timer */}
-        <div className="mt-6 flex justify-center gap-4 text-xl font-mono bg-gray-950/40 w-fit self-center p-2 rounded-lg">
+        <div className="mt-1 flex justify-center gap-4 text-xl font-mono bg-gray-950/40 w-fit scale-90 md:scale-100 self-center p-2 rounded-lg">
           {timeLeft.split(":").map((time, index) => (
             <div
               key={index}

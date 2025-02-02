@@ -41,7 +41,7 @@ const prizes = [
 
 export default function Prizes() {
   return (
-    <section className="bg-black text-white py-20 text-center flex flex-col items-center">
+    <section className="bg-black text-white pt-20 text-center flex flex-col items-center">
       {/* Total Prize Pool */}
       <motion.h2
         className="text-4xl md:text-6xl font-squid-game font-bold mb-6 text-pink-600 uppercase"
@@ -106,7 +106,7 @@ export default function Prizes() {
       </div>
       <div className="pt-10 px-6 lg:px-[15%]">
         <motion.div
-          whileHover={{ scale: 1.05, rotate: [0, 1, -1, 0] }}
+          whileHover={{ scale: 1.05, rotate: [0, 0] }}
           whileTap={{ scale: 0.95 }}
           className={`relative p-10 border-4 border-pink-500 rounded-2xl shadow-lg bg-gray-900 flex flex-col items-center transition-all duration-300`}
         >

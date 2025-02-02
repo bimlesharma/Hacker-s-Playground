@@ -86,7 +86,7 @@ const FooterSection = () => {
                 Sponsorship Brochure
               </a>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/" // Replace with the actual link
                 // target="_blank"
@@ -95,10 +95,10 @@ const FooterSection = () => {
               >
                 Hackathon Guidelines
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
-                href="/" // Replace with the actual link
+                href="#faqs" // Replace with the actual link
                 // target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-gray-300 hover:text-pink-500 "
