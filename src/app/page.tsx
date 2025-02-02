@@ -6,6 +6,7 @@ import VenueReveal from "@/components/Venue";
 import AboutTechNexus from "@/components/About-TechNexus";
 import AboutGDG from "@/components/About-GDG";
 import Theme  from "@/components/Theme";
+import Prizes from "@/components/Prizes";
 
 
 export default function Home() {
@@ -26,6 +27,9 @@ export default function Home() {
     </div>
     <div id="schedule" className="">
       <Schedule />
+    </div>
+    <div id="prizes" className="">
+      <Prizes />
     </div>
     <div id="faqs" className="">
       <Faqs />
