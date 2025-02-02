@@ -115,10 +115,11 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    >
+    ><div className="absolute inset-0 z-0">
       <Spotlight />
+    </div>
       {/* Static gradient overlay */}
-      <div className=" absolute inset-0 bg-gradient-to-b from-pink-800 via-pink-600 to-pink-900 opacity-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b z-0 from-pink-800 via-pink-600 to-pink-900 opacity-0"></div>
 
       {/* Static shapes */}
      {/* { <div className="absolute hidden md:block left-10 inset-0">
@@ -144,17 +145,18 @@ const Hero = () => {
       {/* Hero content */}
       <div className="relative mt-16 z-10 text-center flex flex-col justify-center text-white max-w-4xl">
         {/* Top logos */}
-        <div className="flex justify-center items-center gap-4 mb-10 md:mb-2 ml-5 scale-110 md:scale-95">
+        <div className="flex justify-center z-50 items-center gap-4 mb-1 md:mb-2 scale-100 md:scale-95">
           <img
             src="/images/technexus-logo.png"
-            width={80}
-            height={80}
+            className=""
+            width={120}
+            height={120}
             draggable="false"
             alt="logo"
           />
-          <div className="antialiased font-squid-game text-3xl">X</div>
-          <img src="/images/gdg-logo.png" width={110} height={80} alt="logo" draggable="false" />
+          {/* <img src="/images/gdg-logo.png" width={110} height={80} alt="logo" draggable="false" /> */}
         </div>
+          <div className=" text-lg text-center ">PRESENTS</div>
 
         {/* Title */}
         {/* <h1 className="text-6xl font-squid-game md:text-8xl font-extrabold tracking-wide text-pink-500">
@@ -162,14 +164,14 @@ const Hero = () => {
         </h1> */}
         {/* <img src="/images/logo.png" alt="logo" /> */}
         <Image src="/images/logo.png" width={640} height={64} alt="logo" className="hidden md:block self-center" draggable="false"/>
-        <img src="/images/about-img.png" alt="logo" className="md:hidden w-auto px-10" draggable="false" />
+        <img src="/images/about-img.png" alt="logo" className="md:hidden w-auto px-12" draggable="false" />
 
         {/* Subtitle */}
-        <p className="mt-4 text-lg md:text-4xl pb-4">
+        <p className="mt-4 text-lg md:text-3xl pb-4">
         The Ultimate <span className="text-pink-500 font-semibold"><i>30-Hour Offline</i></span> Showdown
         </p>
 
-        <h1 className="text-2xl font-squid-game md:text-4xl font-extrabold tracking-wide text-pink-500">
+        <h1 className="text-xl font-squid-game md:text-3xl font-extrabold tracking-wide text-pink-500">
           8<span className="">-</span>9th<span className="text-gray-100"> March 2025</span>
         </h1>
 
