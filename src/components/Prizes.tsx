@@ -61,14 +61,14 @@ export default function Prizes() {
         ₹(to be announced)
       </motion.div>
 
-      <motion.h2
+      {/* <motion.h2
         className="text-4xl md:text-6xl font-squid-game font-bold mb-6 text-pink-600 uppercase"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <span className="text-white">Cash</span> Prize
-      </motion.h2>
+      </motion.h2> */}
 
       {/* Prize Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 lg:px-[15%]">
