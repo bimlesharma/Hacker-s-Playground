@@ -75,7 +75,7 @@ const Hero = () => {
   // ];
 
   useEffect(() => {
-    const targetDate = new Date("2025-02-20T00:00:00").getTime();
+    const targetDate = new Date("2025-03-08T08:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -91,7 +91,8 @@ const Hero = () => {
       const hours = Math.floor(
         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      const minutes = Math.floor((difference % (1000 * 60)) / (1000 * 60));
+      // const minutes = Math.floor((difference % (1000 * 60)) / (1000 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
       setTimeLeft(
@@ -114,10 +115,11 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    >
+    ><div className="absolute inset-0 z-0">
       <Spotlight />
+    </div>
       {/* Static gradient overlay */}
-      <div className=" absolute inset-0 bg-gradient-to-b from-pink-800 via-pink-600 to-pink-900 opacity-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b z-0 from-pink-800 via-pink-600 to-pink-900 opacity-0"></div>
 
       {/* Static shapes */}
      {/* { <div className="absolute hidden md:block left-10 inset-0">
@@ -141,19 +143,20 @@ const Hero = () => {
       </div> */} 
 
       {/* Hero content */}
-      <div className="relative mt-16 z-10 text-center flex flex-col justify-center text-white max-w-4xl">
+      <div className="relative mt-12 z-10 text-center flex flex-col justify-center text-white max-w-4xl">
         {/* Top logos */}
-        <div className="flex justify-center items-center gap-4 mb-10 md:mb-2 ml-5 scale-110 md:scale-95">
+        <div className="flex justify-center z-50 items-center gap-4 mb-1 md:mb-2 scale-100 md:scale-95">
           <img
             src="/images/technexus-logo.png"
-            width={80}
-            height={80}
+            className=""
+            width={100}
+            height={100}
             draggable="false"
             alt="logo"
           />
-          <div className="antialiased font-squid-game text-3xl">X</div>
-          <img src="/images/gdg-logo.png" width={110} height={80} alt="logo" draggable="false" />
+          {/* <img src="/images/gdg-logo.png" width={110} height={80} alt="logo" draggable="false" /> */}
         </div>
+          <div className=" text-sm text-center ">PRESENTS</div>
 
         {/* Title */}
         {/* <h1 className="text-6xl font-squid-game md:text-8xl font-extrabold tracking-wide text-pink-500">
@@ -161,19 +164,19 @@ const Hero = () => {
         </h1> */}
         {/* <img src="/images/logo.png" alt="logo" /> */}
         <Image src="/images/logo.png" width={640} height={64} alt="logo" className="hidden md:block self-center" draggable="false"/>
-        <img src="/images/about-img.png" alt="logo" className="md:hidden w-auto px-10" draggable="false" />
+        <img src="/images/about-img.png" alt="logo" className="md:hidden w-auto px-12" draggable="false" />
 
         {/* Subtitle */}
-        <p className="mt-4 text-lg md:text-4xl pb-4">
+        <p className="mt-4 text-lg md:text-3xl pb-4">
         The Ultimate <span className="text-pink-500 font-semibold"><i>30-Hour Offline</i></span> Showdown
         </p>
 
-        <h1 className="text-2xl font-squid-game md:text-4xl font-extrabold tracking-wide text-pink-500">
+        <h1 className="text-xl font-squid-game md:text-3xl font-extrabold tracking-wide text-pink-500">
           8<span className="">-</span>9th<span className="text-gray-100"> March 2025</span>
         </h1>
 
         {/* Timer */}
-        <div className="mt-6 flex justify-center gap-4 text-xl font-mono bg-gray-950/40 w-fit self-center p-2 rounded-lg">
+        <div className="mt-1 flex justify-center gap-4 text-xl font-mono bg-gray-950/40 w-fit scale-90 md:scale-100 self-center p-2 rounded-lg">
           {timeLeft.split(":").map((time, index) => (
             <div
               key={index}
@@ -191,7 +194,7 @@ const Hero = () => {
 
         {/* Shapes */}
         <div className="mt-4 flex justify-center items-center gap-6 text-pink-500">
-          <motion.div
+          {/* <motion.div
             className="text-5xl"
             whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.3 }}
@@ -211,7 +214,8 @@ const Hero = () => {
             transition={{ duration: 0.3 }}
           >
             □
-          </motion.div>
+          </motion.div> */}
+          <img src="/images/shape.svg" className="w-[45%] md:w-[27%]" alt="shapes" />
         </div>
 
         {/* Register button */}

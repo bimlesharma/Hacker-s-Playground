@@ -10,6 +10,7 @@ import {
   FaChalkboardTeacher,
   FaUpload,
   FaTrophy,
+  FaGamepad,
 } from "react-icons/fa";
 
 const Schedule = () => {
@@ -77,7 +78,7 @@ const Schedule = () => {
       date: "2022-03-23",
       title: "Midnight Snacks and Fun Activities",
       description : "Celebrate the end of the event and announce the winners.",
-      icon: <FaTrophy className="w-6 h-6 text-pink-500" />,
+      icon: <FaGamepad className="w-6 h-6 text-pink-500" />,
     },
     {
       time: "09:00 AM",
@@ -147,9 +148,9 @@ const Schedule = () => {
   const progress = calculateProgress();
 
   return (
-    <div className="relative overflow-hidden w-full py-12 px-4 sm:px-6 bg-black text-white">
-      <h2 className="text-4xl font-bold text-center mb-8 text-pink-600">
-        Event Schedule
+    <div className="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 bg-black text-white">
+      <h2 className="text-4xl md:text-6xl font-bold font-squid-game text-center mb-8 uppercase ">
+        Event <span className="text-pink-600">Schedule</span>
       </h2>
 
       <div className="relative max-w-4xl mx-auto">

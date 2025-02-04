@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hacker's Playground",
-  description: "A playground for hackers ",
+  title: "Hackers' Playground",
+  description: "A 30-hour offline overnight hackathon hosted in collaboration with GDG on Campus MIET and TechNexus Community. Join us at MIET Campus on 8th - 9th March 2025 for an exciting opportunity to unleash your creativity, solve real-world challenges, and push your skills to the limit!",
 };
 
 export default function RootLayout({

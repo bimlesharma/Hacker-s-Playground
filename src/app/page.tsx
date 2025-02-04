@@ -1,8 +1,13 @@
-import AboutSection from "@/components/About";
+// import AboutSection from "@/components/About";
 import Schedule from "@/components/Schedule";
 import Hero from "@/components/Hero";
 import Faqs from "@/components/Faqs";
 import VenueReveal from "@/components/Venue";
+import AboutTechNexus from "@/components/About-TechNexus";
+import AboutGDG from "@/components/About-GDG";
+import Theme  from "@/components/Theme";
+import Prizes from "@/components/Prizes";
+import Swag from "@/components/Swag";
 
 
 export default function Home() {
@@ -13,11 +18,22 @@ export default function Home() {
     </div>
     {/* <SquidGameDivider /> */}
     <div id="about" className="">
-      <AboutSection />
+      {/* <AboutSection /> */}
+      <AboutTechNexus />
+      <AboutGDG />
       
+    </div>
+    <div id="tracks" className="">
+      <Theme />
     </div>
     <div id="schedule" className="">
       <Schedule />
+    </div>
+    <div id="prizes" className="">
+      <Prizes />
+    </div>
+    <div id="swags" className="">
+      <Swag />
     </div>
     <div id="faqs" className="">
       <Faqs />
