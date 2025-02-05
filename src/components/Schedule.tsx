@@ -11,6 +11,9 @@ import {
   FaUpload,
   FaTrophy,
   FaGamepad,
+  FaGavel,
+  FaAward,
+  FaHandshake,
 } from "react-icons/fa";
 
 const Schedule = () => {
@@ -18,77 +21,133 @@ const Schedule = () => {
 
   const schedule = [
     {
-      time: "09:00 AM",
+      time: "09:00 AM - 10:00 AM",
       date: "2025-03-08",
-      title: "Check-In",
+      title: "Registration and Check-in",
       description: "Register and get ready for the ultimate coding challenge.",
       icon: <FaUserCheck className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "10:00 AM",
+      time: "10:30 AM - 11:00 AM",
       date: "2025-03-08",
       title: "Opening Ceremony",
       description: "Kickstart the event with our hosts and keynote speakers.",
       icon: <FaPlayCircle className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "11:00 PM",
+      time: "11:00 AM - 1:30 PM",
       date: "2025-03-08",
-      title: "Coding Begins",
+      title: "Coding Time 1",
       description: "Participants start hacking and working on their projects.",
       icon: <FaCode className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "01:00 PM",
+      time: "1:30 PM - 2:30 PM",
       date: "2025-03-08",
       title: "Lunch Break",
       description: "Take a break, grab some food, and recharge.",
       icon: <FaUtensils className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "03:00 PM",
+      time: "2:30 PM - 5:00 PM",
       date: "2025-03-08",
-      title: "First mentoring Round",
-      description: "Get help from mentors and improve your projects.",
-      icon: <FaChalkboardTeacher className="w-6 h-6 text-pink-500" />,
+      title: "Coding Time 2",
+      description: "Continue developing your projects with your team.",
+      icon: <FaCode className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "05:00 PM",
+      time: "5:00 PM - 6:00 PM",
       date: "2025-03-08",
-      title: "Evening Snacks",
+      title: "Evening Tea and Snacks",
       description: "Enjoy some snacks and refreshments.",
       icon: <FaUtensils className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "08:00 PM",
+      time: "6:00 PM - 8:00 PM",
       date: "2025-03-08",
-      title: "Second mentoring Round",
-      description: "Get help from mentors and improve your projects.",
+      title: "Mentoring Round 1",
+      description: "Get expert guidance and refine your project.",
       icon: <FaChalkboardTeacher className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "09:00 PM",
+      time: "8:00 PM - 9:00 PM",
       date: "2025-03-08",
       title: "Dinner Break",
       description: "Take a break, grab some food, and recharge.",
-      icon: <FaUpload className="w-6 h-6 text-pink-500" />,
+      icon: <FaUtensils className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "12:00 AM",
+      time: "9:00 PM - 11:30 PM",
+      date: "2025-03-08",
+      title: "Coding Time 3",
+      description: "Continue building your project late into the night.",
+      icon: <FaCode className="w-6 h-6 text-pink-500" />,
+    },
+    {
+      time: "11:30 PM - 1:00 AM",
       date: "2025-03-09",
-      title: "Midnight Snacks and Fun Activities",
-      description : "Celebrate the end of the event and announce the winners.",
+      title: "Game and Masti Time",
+      description: "Unwind with fun games and activities.",
       icon: <FaGamepad className="w-6 h-6 text-pink-500" />,
     },
     {
-      time: "09:00 AM",
+      time: "1:00 AM - 7:00 AM",
+      date: "2025-03-09",
+      title: "Coding Time 4",
+      description: "Push through the night and complete your project.",
+      icon: <FaCode className="w-6 h-6 text-pink-500" />,
+    },
+    {
+      time: "7:00 AM - 8:00 AM",
+      date: "2025-03-09",
+      title: "Breakfast",
+      description: "Enjoy a morning meal to fuel up for the final stretch.",
+      icon: <FaUtensils className="w-6 h-6 text-pink-500" />,
+    },
+    {
+      time: "8:00 AM - 10:00 AM",
+      date: "2025-03-09",
+      title: "Mentoring Round 2",
+      description: "Final mentoring session to polish your project.",
+      icon: <FaChalkboardTeacher className="w-6 h-6 text-pink-500" />,
+    },
+    {
+      time: "11:00 AM",
       date: "2025-03-09",
       title: "Top 10 Announcement",
-      description : "Celebrate the end of the event and announce the winners.",
+      description: "Announcement of the top 10 teams moving to final judging.",
       icon: <FaTrophy className="w-6 h-6 text-pink-500" />,
-
+    },
+    {
+      time: "11:30 AM - 2:00 PM",
+      date: "2025-03-09",
+      title: "Final Judgement Round",
+      description: "Final presentations and evaluation by judges.",
+      icon: <FaGavel className="w-6 h-6 text-pink-500" />,
+    },
+    {
+      time: "2:00 PM - 3:00 PM",
+      date: "2025-03-09",
+      title: "Lunch",
+      description: "Enjoy a well-deserved meal before the final ceremonies.",
+      icon: <FaUtensils className="w-6 h-6 text-pink-500" />,
+    },
+    {
+      time: "3:00 PM - 4:00 PM",
+      date: "2025-03-09",
+      title: "Felicitation Ceremony",
+      description: "Recognizing the top teams and winners.",
+      icon: <FaAward className="w-6 h-6 text-pink-500" />,
+    },
+    {
+      time: "4:00 PM - 5:00 PM",
+      date: "2025-03-09",
+      title: "Goodbye Note and Closing Ceremony",
+      description: "Wrap-up and bid farewell to an amazing hackathon.",
+      icon: <FaHandshake className="w-6 h-6 text-pink-500" />,
     }
   ];
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -162,7 +221,7 @@ const Schedule = () => {
             style={{ height: `${progress}%` }}
             initial={{ height: 0 }}
             animate={{ height: `${progress}%` }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
           />
         </div>
 
