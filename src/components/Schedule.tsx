@@ -270,7 +270,7 @@ const Schedule = () => {
               {/* Event Details */}
               <div className="w-1/2 px-4">
                 <motion.div
-                  className={`p-6 rounded-lg shadow-lg ${
+                  className={`p-4 md:p-6 rounded-lg shadow-lg ${
                     isPast
                       ? "bg-gray-800 border-gray-600 opacity-50"
                       : isActive
