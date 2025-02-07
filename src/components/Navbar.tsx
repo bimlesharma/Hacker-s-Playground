@@ -8,6 +8,7 @@ import Link from "next/link";
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isJoinUsOpen, setIsJoinUsOpen] = useState(false);
+  const [isMobileJoinUsOpen, setIsMobileJoinUsOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -75,7 +76,7 @@ const NavBar = () => {
                   {["Participants", "Sponsors", "Community Partners"].map((option, idx) => (
                     <a 
                       key={idx} 
-                      href={option==="Participants" ? "https://dorahacks.io/hackathon/hackersplayground/" : option==="Sponsors" ? "" : ""} 
+                      href={option === "Participants" ? "https://dorahacks.io/hackathon/hackersplayground/" : "#"} 
                       className="block px-4 py-2 text-white hover:bg-pink-500/80 transition"
                     >
                       {option}
@@ -91,7 +92,7 @@ const NavBar = () => {
             as="button"
             className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md"
           >
-            <span className="text-sm font-bold">Register Now</span>
+            <a href="https://dorahacks.io/hackathon/hackersplayground/" className="text-sm font-bold">Register Now</a>
           </HoverBorderGradient>
         </div>
 
@@ -127,33 +128,32 @@ const NavBar = () => {
             exit={{ opacity: 0, y: 50 }}
             transition={{ duration: 0.3 }}
           >
-            {["About", "Tracks", "Schedule", "Prizes", "Sponsors", "Team", "Join Us"].map((item, index) => (
+            {["About", "Tracks", "Schedule", "Prizes", "Sponsors", "Team"].map((item, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
                 className="text-white font-semibold cursor-pointer relative"
-                onClick={closeMobileMenu} // Close mobile menu on click
+                onClick={closeMobileMenu} 
               >
                 <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="relative">
                   {item}
                 </a>
-                <motion.div
-                  className="absolute bottom-0 left-0 h-[2px] bg-pink-500 w-0"
-                  initial={{ width: "0" }}
-                  whileHover={{ width: "100%" }}
-                  transition={{ duration: 0.3 }}
-                />
               </motion.div>
             ))}
-
-            <HoverBorderGradient
-              containerClassName="rounded-[7px]"
-              as="button"
-              className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md disabled:cursor-not-allowed"
-            >
-              <span className="text-sm font-bold">Register Now</span>
-            </HoverBorderGradient>
+            
+            <div className="text-white font-semibold cursor-pointer" onClick={() => setIsMobileJoinUsOpen((prev) => !prev)}>
+              Join Us
+            </div>
+            {isMobileJoinUsOpen && (
+              <div className="flex flex-col items-center bg-black/80 border border-pink-500 rounded-md w-48">
+                {["Participants", "Sponsors", "Community Partners"].map((option, idx) => (
+                  <a key={idx} href="#" className="block px-4 py-2 text-white hover:bg-pink-500/80 transition">
+                    {option}
+                  </a>
+                ))}
+              </div>
+            )}
           </motion.div>
         )}
       </motion.nav>

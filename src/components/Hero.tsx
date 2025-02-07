@@ -226,7 +226,7 @@ const Hero = () => {
             transition={{ duration: 0.3 }}
             disabled
           >
-            Register Now
+           <a href="https://dorahacks.io/hackathon/hackersplayground/" > Register Now</a>
           </motion.button>
         </div>
       </div>

@@ -68,10 +68,10 @@ const AboutSection = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src="/images/about-img.png"
+            src="/images/technexus-logo.png"
             alt="Squid Game Doll"
             draggable="false"
-            className="rounded-lg shadow-lg w-auto"
+            className="scale-105 mx-auto shadow-pink-500 backdrop-brightness-150 w-auto"
           />
           {/* <Image src={`/images/about-img.png`} width={400} height={300} alt="about"/> */}
           <motion.div
