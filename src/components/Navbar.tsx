@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isJoinUsOpen, setIsJoinUsOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -19,7 +20,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-center w-full">
       <motion.nav
-        className="fixed top-3 left-3 right-3 md:left-[5vw] md:right-[5vw] lg:left-[10vw] lg:right-[10vw] rounded-md md:top-2 md:transform md:-translate-x-1/2 z-50 bg-black/30 backdrop-blur shadow-2xl px-6 py-3 border border-pink-500"
+        className="fixed top-3 left-3 right-3 md:left-[5vw] md:right-[5vw] lg:left-[10vw] lg:right-[10vw] rounded-md md:top-2 md:transform md:-translate-x-1/2 z-40 bg-black/30 backdrop-blur shadow-2xl px-6 py-3 border border-pink-500"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
@@ -38,15 +39,7 @@ const NavBar = () => {
           </Link>
 
           <div className="flex items-center space-x-6 font-mono uppercase text-sm">
-            {[
-              "About",
-              "Tracks",
-              "Schedule",
-              "Prizes",
-              "Swags",
-              "Sponsors",
-              "Team",
-            ].map((item, index) => (
+            {["About", "Tracks", "Schedule", "Prizes", "Sponsors", "Team"].map((item, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1 }}
@@ -64,6 +57,33 @@ const NavBar = () => {
                 />
               </motion.div>
             ))}
+
+            {/* Join Us Dropdown */}
+            <div 
+              className="relative text-white font-semibold cursor-pointer"
+              onMouseEnter={() => setIsJoinUsOpen(true)}
+              onMouseLeave={() => setIsJoinUsOpen(false)}
+            >
+              <span>Join Us</span>
+              {isJoinUsOpen && (
+                <motion.div 
+                  className="absolute left-0 mt w-48 bg-black/80 backdrop-blur border border-pink-500 rounded-md shadow-lg z-50"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {["Participants", "Sponsors", "Community Partners"].map((option, idx) => (
+                    <a 
+                      key={idx} 
+                      href={option==="Participants" ? "https://dorahacks.io/hackathon/hackersplayground/" : option==="Sponsors" ? "" : ""} 
+                      className="block px-4 py-2 text-white hover:bg-pink-500/80 transition"
+                    >
+                      {option}
+                    </a>
+                  ))}
+                </motion.div>
+              )}
+            </div>
           </div>
 
           <HoverBorderGradient
@@ -107,15 +127,7 @@ const NavBar = () => {
             exit={{ opacity: 0, y: 50 }}
             transition={{ duration: 0.3 }}
           >
-            {[
-              "About",
-              "Tracks",
-              "Schedule",
-              "Prizes",
-              "Swags",
-              "Sponsors",
-              "Team",
-            ].map((item, index) => (
+            {["About", "Tracks", "Schedule", "Prizes", "Sponsors", "Team", "Join Us"].map((item, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1 }}
@@ -123,7 +135,7 @@ const NavBar = () => {
                 className="text-white font-semibold cursor-pointer relative"
                 onClick={closeMobileMenu} // Close mobile menu on click
               >
-                <a href={`#${item.toLowerCase()}`} className="relative">
+                <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="relative">
                   {item}
                 </a>
                 <motion.div
@@ -134,18 +146,11 @@ const NavBar = () => {
                 />
               </motion.div>
             ))}
-            {/* <motion.button
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
-              className="bg-white text-pink-800 font-semibold py-2 px-4 rounded shadow hover:shadow-md"
-            >
-              Register Now
-            </motion.button> */}
+
             <HoverBorderGradient
               containerClassName="rounded-[7px]"
               as="button"
               className=" bg-none h-auto bg-pink-600 text-white flex items-center justify-center rounded-md disabled:cursor-not-allowed"
-              
             >
               <span className="text-sm font-bold">Register Now</span>
             </HoverBorderGradient>

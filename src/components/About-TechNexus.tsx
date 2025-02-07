@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import PastEvents from "./PastEvents";
 // import Image from "next/image";
 
 const AboutSection = () => {
@@ -54,32 +55,7 @@ const AboutSection = () => {
             hackathon challenges you to think, create, and innovate. It is a 30-hour offline overnight hackathon, designed to push the boundaries of innovation, creativity, and collaboration. This event goes beyond just being a competition—it’s packed with exciting activities, engaging games, and real-world problem-solving to keep the energy high and the ideas flowing!
           </motion.p>
 
-          <motion.p
-          className="text-gray-300 text-xl font-bold leading-8 mb-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          >
-          What else we do?
-          </motion.p>
-          <ul className="space-y-4">
-            {[
-              "🏆 Hackathons – High-energy competitions like Clash of Codes & Hackers' Playground to turn ideas into reality.",
-              "🎤 Meetups & Workshops – Expert-led sessions to explore the latest tech trends.",
-              "🤝 Collaboration & Growth – Partnering with industry leaders to create career opportunities.",
-              "🎈 Fun with lots of engaging mini-games & activities.",
-            ].map((point, index) => (
-              <motion.li
-                key={index}
-                className="flex items-center text-gray-300 text-lg"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5 + index * 0.2, duration: 1 }}
-              >
-                <span className="text-pink-500 mr-3">•</span> {point}
-              </motion.li>
-            ))}
-          </ul>
+          <PastEvents />
           
         </div>
         
