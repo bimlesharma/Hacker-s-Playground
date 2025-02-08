@@ -148,7 +148,7 @@ const NavBar = () => {
             {isMobileJoinUsOpen && (
               <div className="flex flex-col items-center bg-black/80 border border-pink-500 rounded-md w-48">
                 {["Participants", "Sponsors", "Community Partners"].map((option, idx) => (
-                  <a key={idx} href="#" className="block px-4 py-2 text-white hover:bg-pink-500/80 transition">
+                  <a key={idx} href={option === "Participants" ? "https://dorahacks.io/hackathon/hackersplayground/" : "#"} className="block px-4 py-2 text-white hover:bg-pink-500/80 transition">
                     {option}
                   </a>
                 ))}
