@@ -4,6 +4,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdLocationPin } from "react-icons/md";
 import Link from "next/link";
+import VisitorCounter from "./VisitorCounter";
 
 const FooterSection = () => {
   return (
@@ -144,6 +145,14 @@ const FooterSection = () => {
 
       {/* Bottom Bar */}
       <div className="relative mt-12 border-none border-gray-700 pt-6 text-center">
+        <VisitorCounter />
+        <motion.div
+          className="absolute inset-x-0 mx-auto top-0 h-[1px] w-auto bg-pink-500 rounded-full"
+          animate={{ scaleX: [.8, 1, .8] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
+      </div>
+      <div className="relative mt-6 border-none border-gray-700 pt-6 text-center">
         <p className="text-gray-500 text-sm">
           © {new Date().getFullYear()} TechNexus Community. All rights reserved.
         </p>
