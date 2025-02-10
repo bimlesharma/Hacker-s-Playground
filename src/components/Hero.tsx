@@ -75,7 +75,7 @@ const Hero = () => {
   // ];
 
   useEffect(() => {
-    const targetDate = new Date("2025-03-08T08:00:00").getTime();
+    const targetDate = new Date("2025-03-01T08:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -172,7 +172,7 @@ const Hero = () => {
         </p>
 
         <h1 className="text-xl font-squid-game md:text-3xl font-extrabold tracking-wide text-pink-500">
-          8<span className="">-</span>9th<span className="text-gray-100"> March 2025</span>
+          1<span className="">-</span>2nd<span className="text-gray-100"> March 2025</span>
         </h1>
 
         {/* Timer */}

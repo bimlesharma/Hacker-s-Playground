@@ -79,7 +79,7 @@ const FooterSection = () => {
           <ul className="space-y-2 text-sm">
             <li>
               <a
-                href="https://drive.google.com/file/d/19DhNb4f3eo8zhcIMMe1RC0A5moWyRsi1"
+                href="https://drive.google.com/file/d/1qrQ-ixCObHIEl8AXHU-EEInBMqsZfZYo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-gray-300 hover:text-pink-500 "
