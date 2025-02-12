@@ -23,7 +23,7 @@ const FooterSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div className="relative z-10 container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-2">
         {/* Hackathon Logo */}
         <div className="flex flex-col items-center lg:items-start space-y-4">
           {/* <div className=" border p-2 rounded-lg border-pink-500 flex items-center justify-center ">
@@ -34,10 +34,12 @@ const FooterSection = () => {
             />
           </div> */}
           <h1 className="text-3xl font-squid-game mg:text-4xl  font-extrabold tracking-wide text-pink-500">
-          HACKER&apos;S <span className="text-gray-300">PLAYGROUND</span>
-        </h1>
+            HACKER&apos;S <span className="text-gray-300">PLAYGROUND</span>
+          </h1>
           <p className="text-sm text-gray-400">
-          Hackers&apos; Playground – The Ultimate 30-Hour Offline Showdown, organized by TechNexus Community in collaboration with GDG on Campus MIET, is where creativity meets technology.
+            Hackers&apos; Playground – The Ultimate 30-Hour Offline Showdown,
+            organized by TechNexus Community in collaboration with GDG on Campus
+            MIET, is where creativity meets technology.
           </p>
         </div>
 
@@ -110,34 +112,63 @@ const FooterSection = () => {
         </div>
 
         {/* Contact Us Section */}
-        <div className="space-y-4">
-          <h4 className="text-lg font-semibold text-white">Contact Us</h4>
-          <div className="flex flex-col space-y-2">
-            <a
-              href="https://www.instagram.com/tech_nexus_community/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
-            >
-              <FaInstagram className=" text-2xl" />
-              <span>@Tech_Nexus_Community</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/technexus-community/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
-            >
-              <FaLinkedin className="text-2xl" />
-              <span>TechNexus Community</span>
-            </a>
-            <a
-              href="mailto:technexus.community2024@gmail.com"
-              className="flex items-center space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
-            >
-              <HiOutlineMail className=" text-2xl" />
-              <span>technexus.community2024@gmail.com</span>
-            </a>
+        <div className="space-y-4 flex flex-col sm:relative sm:-left-32">
+          <h4 className="text-lg font-semibold text-white text-center">Contact Us</h4>
+          <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col space-y-2 mr-2 mb-4 "> TechNexus Community
+              <a
+                href="https://www.instagram.com/tech_nexus_community/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center mt-2 space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
+              >
+                <FaInstagram className=" text-lg" />
+                <span>@Tech_Nexus_Community</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/technexus-community/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
+              >
+                <FaLinkedin className="text-lg" />
+                <span>TechNexus Community</span>
+              </a>
+              <a
+                href="mailto:technexus.community2024@gmail.com"
+                className="flex items-center space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
+              >
+                <HiOutlineMail className=" text-lg" />
+                <span>technexus.community2024@gmail.com</span>
+              </a>
+            </div>
+            <div className="flex flex-col space-y-2">GDG MIET
+              <a
+                href="https://www.instagram.com/gdg_miet?igsh=MXVnY2dxZjJ5dHV4cg%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center mt-2 space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
+              >
+                <FaInstagram className=" text-lg " />
+                <span>@gdg_miet</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/google-developer-groups-on-campus-meerut-institute-of-engineering-and-technology/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
+              >
+                <FaLinkedin className="text-lg" />
+                <span>GDG MIET</span>
+              </a>
+              <a
+                href="mailto:gdgoncampus@miet.ac.in"
+                className="flex items-center space-x-2 hover:underline text-sm text-gray-300 hover:text-pink-500"
+              >
+                <HiOutlineMail className=" text-lg" />
+                <span>gdgoncampus@miet.ac.in</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +180,7 @@ const FooterSection = () => {
         </p>
         <motion.div
           className="absolute inset-x-0 mx-auto top-0 h-[1px] w-auto bg-pink-500 rounded-full"
-          animate={{ scaleX: [.8, 1, .8] }}
+          animate={{ scaleX: [0.8, 1, 0.8] }}
           transition={{ duration: 2, repeat: Infinity }}
         />
       </div>
