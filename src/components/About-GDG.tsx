@@ -94,7 +94,13 @@ const AboutSection = () => {
             draggable="false"
             className="rounded-lg shadow-lg w-full"
           />
-          {/* <Image src={`/images/about-img.png`} width={400} height={300} alt="about"/> */}
+          <img
+            src="/images/MIET-LOGO.png"
+            alt="Squid Game Doll"
+            draggable="false"
+            className="rounded-lg scale-75 shadow-lg w-full"
+          />
+          
           <motion.div
             className="absolute p-4 inset-0 border-2 border-pink-500 rounded-lg pointer-events-none"
             initial={{ opacity: 0, scale: 0.8 }}
