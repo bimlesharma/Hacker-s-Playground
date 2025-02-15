@@ -35,7 +35,7 @@ const organizers = [
 const OrganisersSection = () => {
   return (
     <section className="py-16 bg-black text-gray-300 px-6 pt-24 lg:px-24 relative">
-      <h2 className="text-3xl lg:text-4xl font-bold text-center text-pink-500 mb-12 font-squid-game">
+      <h2 className="text-4xl md:text-6xl font-squid-game uppercase font-bold text-center text-pink-500 mb-12 py-5">
         <span className="text-white">Meet The</span> Organizers
       </h2>
 

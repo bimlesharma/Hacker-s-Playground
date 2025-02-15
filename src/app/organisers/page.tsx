@@ -65,7 +65,7 @@ const organizers = [
 const OrganisersPage = () => {
   return (
     <section className="min-h-screen mt-10 py-16 bg-black text-gray-300 px-6 lg:px-24 relative">
-      <h1 className="text-3xl lg:text-4xl font-squid-game font-bold text-center text-pink-500 mb-12">
+      <h1 className="text-4xl md:text-6xl py-5 uppercase font-squid-game font-bold text-center text-pink-500 mb-12">
         <span className="text-white">Meet The</span> Organizers
       </h1>
       
