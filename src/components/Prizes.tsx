@@ -12,7 +12,7 @@ import {
 const prizes = [
   {
     title: "Winner",
-    amount: "₹(to be announced)",
+    amount: "₹12,000 cash + Exclusive Swag Kit",
     icon: <FaTrophy size={60} className="text-yellow-500" />,
     border: "border-yellow-500",
     badge: "🥇 Gold",
@@ -21,7 +21,7 @@ const prizes = [
   },
   {
     title: "1st Runner-up",
-    amount: "₹(to be announced)",
+    amount: "₹8,000 cash + Exclusive Swag Kit",
     icon: <FaMedal size={60} className="text-gray-300" />,
     border: "border-gray-400",
     badge: "🥈 Silver",
@@ -30,7 +30,7 @@ const prizes = [
   },
   {
     title: "2nd Runner-up",
-    amount: "₹(to be announced)",
+    amount: "₹5,000 cash + Exclusive Swag Kit",
     icon: <FaAward size={60} className="text-orange-400" />,
     border: "border-orange-400",
     badge: "🥉 Bronze",
@@ -58,7 +58,7 @@ export default function Prizes() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        ₹(to be announced)
+        ₹2Lakh+
       </motion.div>
 
       {/* <motion.h2

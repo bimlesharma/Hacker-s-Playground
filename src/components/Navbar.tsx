@@ -47,7 +47,7 @@ const NavBar = () => {
                 transition={{ duration: 0.3 }}
                 className="text-white cursor-pointer font-semibold relative"
               >
-                <a href={`#${item.toLowerCase()}`} className="relative">
+                <a href={`/#${item.toLowerCase()}`} className="relative">
                   {item}
                 </a>
                 <motion.div
@@ -136,7 +136,7 @@ const NavBar = () => {
                 className="text-white font-semibold cursor-pointer relative"
                 onClick={closeMobileMenu} 
               >
-                <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="relative">
+                <a href={`/#${item.toLowerCase().replace(/\s+/g, '-')}`} className="relative">
                   {item}
                 </a>
               </motion.div>

@@ -8,6 +8,8 @@ import AboutGDG from "@/components/About-GDG";
 import Theme  from "@/components/Theme";
 import Prizes from "@/components/Prizes";
 import Swag from "@/components/Swag";
+import SponsorSection from "@/components/Sponsors";
+import OrganizersSection from "@/components/Oraganizers";
 
 
 export default function Home() {
@@ -34,6 +36,12 @@ export default function Home() {
     </div>
     <div id="swags" className="">
       <Swag />
+    </div>
+    <div id="sponsors" className="">
+      <SponsorSection />
+    </div>
+    <div id="team" className="">
+      <OrganizersSection />
     </div>
     <div id="faqs" className="">
       <Faqs />

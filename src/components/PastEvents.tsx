@@ -56,7 +56,7 @@ const PastEvents = () => {
               className="w-full h-64 object-cover group-hover:opacity-80 transition"
             />
             <motion.div
-              className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition"
+              className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-100 transition"
             >
               <span className="text-white text-xl font-bold">{event.title}</span>
               <span className="text-white text-lg font-semibold bg-pink-600 px-4 py-2 rounded-lg mt-2">
