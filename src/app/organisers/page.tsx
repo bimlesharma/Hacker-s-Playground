@@ -40,14 +40,33 @@ const organizers = [
       image: "/images/organizers/palak.jpg",
       social: "http://www.linkedin.com/in/palak-singhal-14a78324a",
     },
+    {
+      name: "Vishesh Jindal",
+      role: "Organizer",
+      image: "/images/organizers/vishesh.jpg",
+      social: "https://www.linkedin.com/in/vishesh-jindal/",
+    },
+    {
+      name: "Himanshu",
+      role: "Organizer",
+      image: "/images/organizers/himanshu.jpg",
+      social: "https://www.linkedin.com/in/himanshukumard/",
+    },
+    {
+      name: "Kunj Agarwal",
+      role: "Organizer",
+      image: "/images/organizers/kunj.jpg",
+      social: "https://www.linkedin.com/in/kunj-agarwal",
+    },
+    
     
   ];
 
 const OrganisersPage = () => {
   return (
     <section className="min-h-screen mt-10 py-16 bg-black text-gray-300 px-6 lg:px-24 relative">
-      <h1 className="text-5xl font-bold text-center text-pink-500 mb-12">
-        Meet The Organizers
+      <h1 className="text-3xl lg:text-4xl font-squid-game font-bold text-center text-pink-500 mb-12">
+        <span className="text-white">Meet The</span> Organizers
       </h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

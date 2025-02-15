@@ -53,12 +53,12 @@ export default function Prizes() {
       </motion.h2>
 
       <motion.div
-        className="text-3xl font-extrabold text-gray-300 mb-12"
+        className="text-5xl font-extrabold text-gray-300 mb-12"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        ₹2Lakh+
+        ₹2 Lakh+
       </motion.div>
 
       {/* <motion.h2
