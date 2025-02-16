@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
-import Image from "next/image";
+// import { motion } from "framer-motion";
+// import Image from "next/image";
 import Link from "next/link";
 import PixelTransition from "./ui/PixelTransition";
 import { FaLinkedin } from "react-icons/fa";
@@ -61,9 +61,9 @@ const commanders = [
 
 const OrganisersSection = () => {
   return (
-    <section className="py-16 bg-black text-gray-300 px-6 lg:px-24 relative">
-      <h2 className="text-7xl font-bold text-center text-pink-500 mb-12 antialiased">
-        Meet The Organizers
+    <section className="py-16 bg-black text-gray-300 px-6 pt-24 lg:px-24 relative">
+      <h2 className="text-4xl md:text-6xl font-squid-game uppercase font-bold text-center text-pink-500 mb-12 py-5">
+        <span className="text-white">Meet The</span> Organizers
       </h2>
       <h2 className="text-5xl font-bold text-center text-pink-500 mb-12 antialiased">
         Frontmans 

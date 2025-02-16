@@ -27,7 +27,7 @@ const SponsorSection = () => {
       </div>
 
       <div className="relative z-10 container mx-auto">
-        <h2 className="text-4xl font-extrabold text-pink-500 mb-10">Sponsors</h2>
+        <h2 className="text-4xl md:text-6xl font-squid-game uppercase font-extrabold text-pink-500 mb-10 pt-20">Sponsors</h2>
         
         {Object.entries(sponsors).map(([tier, images], index) => (
           <div key={tier} className="mb-12">

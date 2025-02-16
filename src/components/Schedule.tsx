@@ -241,7 +241,7 @@ const Schedule = () => {
               } items-center mb-8`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.15, delay: index * 0.01 }}
             >
               {/* Event Time and Date */}
               <div className="w-1/2 px-4 text-right">
