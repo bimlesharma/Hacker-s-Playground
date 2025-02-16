@@ -47,6 +47,12 @@ const organizers = [
       social: "https://www.linkedin.com/in/vishesh-jindal/",
     },
     {
+      name: "Suraj",
+      role: "Organizer",
+      image: "/images/organizers/suraj.jpg",
+      social: "https://www.linkedin.com/in/suraj-chauhan-7312402a6/",
+    },
+    {
       name: "Himanshu",
       role: "Organizer",
       image: "/images/organizers/himanshu.jpg",

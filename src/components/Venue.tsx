@@ -120,7 +120,7 @@ const VenueReveal = () => {
   }, []);
 
   return (
-    <div className="relative w-full bg-black flex px-5 flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full bg-black flex px-5 flex-col items-center justify-center overflow-hidden mb-10">
       <div className="text-4xl md:text-6xl font-bold font-squid-game text-center text-pink-600 mb-8">
         VENUE
       </div>

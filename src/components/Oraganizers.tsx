@@ -47,8 +47,8 @@ const commanders = [
   {
     name: "Suraj",
     role: "Organizer",
-    image: "/images/organizers/suraj.png",
-    social: "https://www.linkedin.com/in/avnish-gupta-23245a273/",
+    image: "/images/organizers/suraj.jpg",
+    social: "https://www.linkedin.com/in/suraj-chauhan-7312402a6/",
   },
   {
     name: "Vishesh",
