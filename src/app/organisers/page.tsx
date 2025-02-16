@@ -58,6 +58,36 @@ const organizers = [
       image: "/images/organizers/kunj.jpg",
       social: "https://www.linkedin.com/in/kunj-agarwal",
     },
+    {
+      name: "Ashi Verma",
+      role: "Organizer",
+      image: "/images/organizers/ashi.png",
+      social: "https://www.linkedin.com/in/ashi-verma-234646215/",
+    },
+    {
+      name: "Tanishq Taliyan",
+      role: "Organizer",
+      image: "/images/organizers/tanishq.jpeg",
+      social: "https://www.linkedin.com/in/tanishq-taliyan",
+    },
+    {
+      name: "Vansh Gautam",
+      role: "Organizer",
+      image: "/images/organizers/vansh.jpeg",
+      social: "https://www.linkedin.com/in/vansh-gautam-a17a52305",
+    },
+    {
+      name: "Harshit Rana",
+      role: "Organizer",
+      image: "/images/organizers/harshit-rana.jpeg",
+      social: "https://www.linkedin.com/in/harshit-rana-041ab5284",
+    },
+    {
+      name: "Akshat Chauhan",
+      role: "Organizer",
+      image: "/images/organizers/akshat.jpg",
+      social: "https://www.linkedin.com/in/akshat-chauhan-088793343",
+    },
     
     
   ];
