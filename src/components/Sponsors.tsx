@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const sponsors = {
-  platinum: ["/images/sponsors/meerutfoundation.png",],
-  gold: [],
-  silver: [],
+  platinum: ["/images/sponsors/meerutfoundation.png","/images/sponsors/dorahacks.png"],
+  gold: ["/images/sponsors/hackquest.png"],
+  silver: ["/images/sponsors/impech.png","/images/sponsors/nextera.png","/images/sponsors/rieka.png","/images/sponsors/p2vak.png"],
   community: []
 };
 
@@ -40,7 +40,7 @@ const SponsorSection = () => {
                   transition={{ type: "spring", stiffness: 200 }}
                   className="p-4 bg-gray-800 rounded-lg shadow-lg"
                 >
-                  <Image src={src} alt={`${tier} sponsor`} width={150} height={80} className="object-contain" />
+                  <Image src={src} alt={`${tier} sponsor`} width={150} height={80} className="w-24 h-24 object-contain" />
                 </motion.div>
               ))}
             </div>
