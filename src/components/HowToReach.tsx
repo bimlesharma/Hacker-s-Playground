@@ -36,7 +36,7 @@ const HowToReach = () => {
           <motion.div
             key={option.id}
             className={`p-6 rounded-lg shadow-lg ${option.color} cursor-pointer hover:scale-105 transition-transform`}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.05 }}
           >
             <div className="flex justify-center mb-4">{option.icon}</div>
             <h3 className="text-xl font-semibold mb-2">{option.title}</h3>
