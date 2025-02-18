@@ -5,7 +5,7 @@ import Image from "next/image";
 const sponsors = {
   platinum: ["/images/sponsors/meerutfoundation.png","/images/sponsors/dorahacks.png"],
   gold: ["/images/sponsors/hackquest.png"],
-  silver: ["/images/sponsors/impech.png","/images/sponsors/nextera.png","/images/sponsors/rieka.png","/images/sponsors/p2vak.png"],
+  silver: ["/images/sponsors/impech.png","/images/sponsors/nextera.png","/images/sponsors/rieka.png","/images/sponsors/p2vak.png","/images/sponsors/commudle.png"],
   community: []
 };
 
