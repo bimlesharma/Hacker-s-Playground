@@ -58,7 +58,7 @@ export default function Prizes() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        ₹2 Lakh+
+        ₹10,00,000+
       </motion.div>
 
       {/* <motion.h2
