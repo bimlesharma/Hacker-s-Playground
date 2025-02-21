@@ -47,6 +47,12 @@ const organizers = [
       social: "https://www.linkedin.com/in/vishesh-jindal/",
     },
     {
+      name: "Suraj",
+      role: "Organizer",
+      image: "/images/organizers/suraj.jpg",
+      social: "https://www.linkedin.com/in/suraj-chauhan-7312402a6/",
+    },
+    {
       name: "Himanshu",
       role: "Organizer",
       image: "/images/organizers/himanshu.jpg",
@@ -105,7 +111,7 @@ const OrganisersPage = () => {
         <span className="text-white">Meet The</span> Organizers
       </h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto">
         {organizers.map((org, index) => (
           <PixelTransition
             key={index}
