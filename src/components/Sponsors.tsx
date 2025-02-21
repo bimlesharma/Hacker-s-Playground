@@ -2,12 +2,22 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const sponsors = {
-  platinum: ["/images/sponsors/meerutfoundation.png","/images/sponsors/dorahacks.png"],
-  gold: ["/images/sponsors/hackquest.png"],
-  silver: ["/images/sponsors/impech.png","/images/sponsors/nextera.png","/images/sponsors/rieka.png","/images/sponsors/p2vak.png","/images/sponsors/commudle.png"],
-  community: []
-};
+const sponsors = [
+  { tier: "Platform Partner", images: ["/images/sponsors/dorahacks.png",] },
+  { tier: "Platinum Sponsor", images: ["/images/sponsors/meerutfoundation.png"] },
+  { tier: "Gold Sponsor", images: ["/images/sponsors/hackquest.png"] },
+  { tier: "Silver Sponsor", images: [
+      "/images/sponsors/impech.png",
+      "/images/sponsors/nextera.png",
+      "/images/sponsors/rieka.png",
+      "/images/sponsors/p2vak.png",
+      "/images/sponsors/commudle.png",
+    ]
+  },
+  { tier: "Bronze Sponsor", images: ["/images/sponsors/interview.png","/images/sponsors/xyz.png","/images/sponsors/balsamiq.png"] },
+  { tier: "Education Partner", images: ["/images/sponsors/educate.png"] },
+  { tier: "Community Partner", images: [] },
+];
 
 const SponsorSection = () => {
   return (
@@ -29,22 +39,24 @@ const SponsorSection = () => {
       <div className="relative z-10 container mx-auto">
         <h2 className="text-4xl md:text-6xl font-squid-game uppercase font-extrabold text-pink-500 mb-10 pt-20">Sponsors</h2>
         
-        {Object.entries(sponsors).map(([tier, images], index) => (
-          <div key={tier} className="mb-12">
-            <h3 className={`text-2xl font-semibold ${tier === 'title' ? 'text-yellow-400' : tier === 'platinum' ? 'text-gray-300' : tier === 'gold' ? 'text-yellow-500' : tier === 'silver' ? 'text-gray-400' : 'text-blue-400'}`}>{tier.toUpperCase()} Sponsors</h3>
-            <div className="mt-4 flex flex-wrap justify-center gap-8">
-              {images.map((src, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 200 }}
-                  className="p-4 bg-gray-800 rounded-lg shadow-lg"
-                >
-                  <Image src={src} alt={`${tier} sponsor`} width={150} height={80} className="w-24 h-24 object-contain" />
-                </motion.div>
-              ))}
+        {sponsors.map(({ tier, images }, index) => (
+          images.length > 0 && (
+            <div key={index} className="mb-12">
+              <h3 className="text-2xl font-semibold text-gray-300">{tier}</h3>
+              <div className="mt-4 flex flex-wrap justify-center gap-8">
+                {images.map((src, i) => (
+                  <motion.div
+                    key={i}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 200 }}
+                    className="p-4 bg-pink-600 rounded-lg shadow-lg"
+                  >
+                    <Image src={src} alt={`${tier} sponsor`} width={150} height={80} className="w-24 h-24 object-contain" />
+                  </motion.div>
+                ))}
+              </div>
             </div>
-          </div>
+          )
         ))}
       </div>
     </section>
