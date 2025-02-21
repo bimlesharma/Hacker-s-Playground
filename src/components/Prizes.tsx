@@ -10,6 +10,7 @@ import {
   FaBitcoin,
 } from "react-icons/fa";
 import CountUp from "./ui/CountUp";
+import Image from "next/image";
 
 const prizes = [
   {
@@ -112,8 +113,8 @@ export default function Prizes() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <div className="flex gap-2">
-              <FaBitcoin size={20} /> Blockchain Bounty
+            <div className="flex items-center gap-2">
+            <Image src="/images/sponsors/aptos-removebg-preview.png" width={20} height={40} alt="Aptos" />Blockchain Bounty
             </div>
           </motion.div>
 
@@ -123,7 +124,8 @@ export default function Prizes() {
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           >
             <div className="flex gap-2 text-blue-500">
-              <FaBitcoin size={50} />
+              <Image src="/images/sponsors/aptos-removebg-preview.png" width={40} height={40} alt="Aptos" />
+              <span className="text-3xl font-bold">Aptos</span>
             </div>
           </motion.div>
 
@@ -132,6 +134,9 @@ export default function Prizes() {
           </h3>
           <p className="text-lg text-gray-400">
             Bring your blockchain skills and win extra rewards!
+          </p>
+          <p className="text-lg text-gray-400">
+            <a href="https://drive.google.com/file/d/1QeYnzdhLfujMXr2w_t6ApYEYmdDvU5Hi/view?usp=drivesdk" target="_blank" className="text-blue-500 underline">Project submission guidlines</a>
           </p>
         </motion.div>
       </div>
