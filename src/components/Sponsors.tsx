@@ -12,11 +12,13 @@ const sponsors = [
       "/images/sponsors/nextera.png",
       "/images/sponsors/rieka.png",
       "/images/sponsors/p2vak.png",
+      "/images/sponsors/xyz.png",
       "/images/sponsors/commudle.png",
     ]
   },
-  { tier: "Bronze Sponsor", images: ["/images/sponsors/interview.png", "/images/sponsors/xyz.png", "/images/sponsors/balsamiq.png"] },
+  { tier: "Bronze Sponsor", images: ["/images/sponsors/interview.png",  "/images/sponsors/balsamiq.png"] },
   { tier: "Education Partner", images: ["/images/sponsors/risein.png"] },
+  { tier: "Web3 Partner", images: ["/images/sponsors/aptos.png"] },
   { tier: "Community Partner", images: [] },
 ];
 
@@ -50,7 +52,7 @@ const SponsorSection = () => {
                     key={i}
                     whileHover={{ scale: 1.0 }}
                     transition={{ type: "spring", stiffness: 200 }}
-                    className="p-4 bg-white rounded-lg shadow-lg"
+                    className="p-4 bg-white rounded-lg shadow-lg border-2 border-white hover:border-pink-600"
                   >
                     {/* <Image src={src} alt={`${tier} sponsor`} width={150} height={80} className="w-24 hover:scale-105 h-24 object-contain" /> */}
                     <Image
