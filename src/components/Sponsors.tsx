@@ -15,7 +15,7 @@ const sponsors = [
     ]
   },
   { tier: "Bronze Sponsor", images: ["/images/sponsors/interview.png","/images/sponsors/xyz.png","/images/sponsors/balsamiq.png"] },
-  { tier: "Education Partner", images: ["/images/sponsors/educate.png"] },
+  { tier: "Education Partner", images: ["/images/sponsors/risein.png"] },
   { tier: "Community Partner", images: [] },
 ];
 
