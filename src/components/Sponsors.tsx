@@ -6,7 +6,8 @@ const sponsors = [
   { tier: "Platform Partner", images: ["/images/sponsors/dorahacks.png",] },
   { tier: "Platinum Sponsor", images: ["/images/sponsors/meerutfoundation.png"] },
   { tier: "Gold Sponsor", images: ["/images/sponsors/hackquest.png"] },
-  { tier: "Silver Sponsor", images: [
+  {
+    tier: "Silver Sponsor", images: [
       "/images/sponsors/impech.png",
       "/images/sponsors/nextera.png",
       "/images/sponsors/rieka.png",
@@ -14,7 +15,7 @@ const sponsors = [
       "/images/sponsors/commudle.png",
     ]
   },
-  { tier: "Bronze Sponsor", images: ["/images/sponsors/interview.png","/images/sponsors/xyz.png","/images/sponsors/balsamiq.png"] },
+  { tier: "Bronze Sponsor", images: ["/images/sponsors/interview.png", "/images/sponsors/xyz.png", "/images/sponsors/balsamiq.png"] },
   { tier: "Education Partner", images: ["/images/sponsors/risein.png"] },
   { tier: "Community Partner", images: [] },
 ];
@@ -38,7 +39,7 @@ const SponsorSection = () => {
 
       <div className="relative z-10 container mx-auto">
         <h2 className="text-4xl md:text-6xl font-squid-game uppercase font-extrabold text-pink-500 mb-10 pt-20">Sponsors</h2>
-        
+
         {sponsors.map(({ tier, images }, index) => (
           images.length > 0 && (
             <div key={index} className="mb-12">
@@ -47,11 +48,19 @@ const SponsorSection = () => {
                 {images.map((src, i) => (
                   <motion.div
                     key={i}
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{ scale: 1.0 }}
                     transition={{ type: "spring", stiffness: 200 }}
-                    className="p-4 bg-pink-600 rounded-lg shadow-lg"
+                    className="p-4 bg-white rounded-lg shadow-lg"
                   >
-                    <Image src={src} alt={`${tier} sponsor`} width={150} height={80} className="w-24 h-24 object-contain" />
+                    {/* <Image src={src} alt={`${tier} sponsor`} width={150} height={80} className="w-24 hover:scale-105 h-24 object-contain" /> */}
+                    <Image
+                      src={src}
+                      alt={`${tier} sponsor`}
+                      width={150}
+                      height={80}
+                      className="w-24 h-24 object-contain transition-transform duration-300 ease-in-out transform hover:scale-110"
+                    />
+
                   </motion.div>
                 ))}
               </div>
