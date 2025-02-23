@@ -94,6 +94,12 @@ const organizers = [
       image: "/images/organizers/akshat.jpg",
       social: "https://www.linkedin.com/in/akshat-chauhan-088793343",
     },
+    {
+      name: "Kumar Ashutosh",
+      role: "Organizer",
+      image: "/images/organizers/ashutosh.jpg",
+      social: "https://www.linkedin.com/in/kumar--ashutosh",
+    },
     
     
   ];

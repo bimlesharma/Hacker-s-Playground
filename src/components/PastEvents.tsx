@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog } from "@headlessui/react";
+import Image from "next/image";
 
 const events = [
   {
@@ -50,7 +51,9 @@ const PastEvents = () => {
             onClick={() => setSelectedEvent(event)}
             whileHover={{ scale: 1.05 }}
           >
-            <img
+            <Image
+              width={500}
+              height={500}
               src={event.images[0].src}
               alt={event.title}
               className="w-full h-64 object-cover group-hover:opacity-80 transition"
@@ -90,7 +93,9 @@ const PastEvents = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               {selectedEvent.images.map((img, idx) => idx>0&&(
                 <div key={idx} className="flex flex-col items-center">
-                  <img
+                  <Image
+                    width={500}
+                    height={500}
                     src={img.src}
                     alt={selectedEvent.title}
                     className="w-full h-64 object-cover rounded-lg"
