@@ -71,9 +71,9 @@ const Hero = () => {
         </h1>
 
         {/* Registration Deadline Timer */}
-        <div className="mt-4 text-lg md:text-2xl font-bold text-yellow-400 bg-yellow-800/40 w-fit px-6 py-2 rounded-lg shadow-lg border border-yellow-500 animate-pulse mx-auto">
+        {/* <div className="mt-4 text-lg md:text-2xl font-bold text-yellow-400 bg-yellow-800/40 w-fit px-6 py-2 rounded-lg shadow-lg border border-yellow-500 animate-pulse mx-auto">
           Registration Closes In: {regTimeLeft}
-        </div>
+        </div> */}
 
         {/* Event Timer */}
         <div className="mt-3 flex justify-center gap-4 text-xl font-mono bg-gray-950/40 w-fit scale-90 md:scale-100 self-center p-2 rounded-lg">
@@ -93,14 +93,28 @@ const Hero = () => {
           <img src="/images/shape.svg" className="w-[45%] md:w-[27%]" alt="shapes" />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-2 gap-2 flex items-center justify-center p-4 rounded-lg shadow-lg">
           <motion.button
+            className="px-6 py-2 bg-gray-600 text-sm md:text-lg font-bold rounded-md md:rounded-lg shadow-xl hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300"
+            whileHover={{ scale: 1.0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <a href="https://dorahacks.io/hackathon/hackersplayground/">Registration Closed</a>
+          </motion.button>
+          <motion.button
+            className="px-6 py-2 bg-pink-600 text-sm md:text-lg font-bold rounded-md md:rounded-lg shadow-xl hover:bg-pink-700 focus:outline-none focus:ring-4 focus:ring-pink-300"
+            whileHover={{ scale: 1.0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <a href="https://maps.app.goo.gl/fBs4Y3GTmWicHsbb7" target="_blank">Navigate Me</a>
+          </motion.button>
+          {/* <motion.button
             className="px-8 py-3 bg-pink-600 text-lg font-bold rounded-lg shadow-xl hover:bg-pink-700 focus:outline-none focus:ring-4 focus:ring-pink-300"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
             <a href="https://dorahacks.io/hackathon/hackersplayground/">Register Now</a>
-          </motion.button>
+          </motion.button> */}
         </div>
       </div>
     </div>

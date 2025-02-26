@@ -21,7 +21,7 @@ const Schedule = () => {
 
   const schedule = [
     {
-      time: "09:00 AM - 10:00 AM",
+      time: "08:00 AM - 10:00 AM",
       date: "2025-03-01",
       title: "Registration and Check-in",
       description: "Register and get ready for the ultimate coding challenge.",
